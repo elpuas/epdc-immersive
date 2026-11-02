@@ -1,0 +1,10 @@
+---
+import Experience from '../../components/Experience';
+import SEO from '../../components/SEO.astro';
+import ReadableContent from '../../components/ReadableContent.astro';
+import {locales,translator,type Locale} from '../../lib/i18n';
+import '../../styles/global.css';
+export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
+const locale=Astro.params.lang as Locale,t=translator(locale);
+---
+<!doctype html><html lang={locale}><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><SEO {locale}/></head><body><a class="skip-content" href="#readable-content">{t('Ir al contenido')}</a><Experience {locale} client:only="react"><div slot="fallback" class="fallback"><h1>ElPuas Digital Crafts</h1><p>{t('Estudio familiar de Costa Rica. Desarrollo web, ecommerce, mantenimiento y colaboración white-label con criterio humano.')}</p></div></Experience><ReadableContent {locale}/></body></html>

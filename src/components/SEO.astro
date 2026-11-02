@@ -1,0 +1,24 @@
+---
+import { pageSEO, indexable } from '../lib/seo';
+import type { Locale } from '../lib/i18n';
+const {locale} = Astro.props as {locale:Locale};
+const seo=pageSEO(locale);
+---
+<title>{seo.title}</title>
+<meta name="description" content={seo.description}/>
+<meta name="robots" content={indexable?'index,follow,max-image-preview:large':'noindex,follow'}/>
+<link rel="canonical" href={seo.url}/>
+{seo.alternates.map(item=><link rel="alternate" hreflang={item.lang} href={item.url}/>)}
+<link rel="alternate" hreflang="x-default" href={seo.alternates[0].url}/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content={seo.title}/>
+<meta property="og:description" content={seo.description}/>
+<meta property="og:url" content={seo.url}/>
+<meta property="og:site_name" content="ElPuas Digital Crafts"/>
+<meta property="og:locale" content={{es:'es_CR',en:'en_US',it:'it_IT'}[locale]}/>
+{seo.alternates.filter(item=>item.lang!==locale).map(item=><meta property="og:locale:alternate" content={{es:'es_CR',en:'en_US',it:'it_IT'}[item.lang]}/>)}
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content={seo.title}/>
+<meta name="twitter:description" content={seo.description}/>
+<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+<script type="application/ld+json" set:html={JSON.stringify(seo.schema).replace(/</g,'\u003c')}/>
