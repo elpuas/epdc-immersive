@@ -1,0 +1,42 @@
+/* Shared typography and interaction rules. Legacy layout rules live in a lower layer. */
+.blog-shell{
+ --epdc-lime:#d8ff00;--epdc-cyan:#00fff3;--epdc-text:#d5dfe0;
+ --epdc-title-font:Inter,system-ui,sans-serif;--epdc-body-font:Montserrat,system-ui,sans-serif;
+ --epdc-h1:54px;--epdc-h2:29px;--epdc-body:16px;--epdc-action:14px;
+ --epdc-title-gradient:linear-gradient(90deg,#d8ff00 36%,#00fff3 100%);
+}
+.blog-shell h1{
+ font-family:var(--epdc-title-font);font-size:var(--epdc-h1);font-weight:700;line-height:1.02;letter-spacing:-.04em;
+ background:var(--epdc-title-gradient);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none;
+}
+.blog-shell h2{
+ font-family:var(--epdc-title-font);font-size:var(--epdc-h2);font-weight:700;line-height:1.15;letter-spacing:-.035em;color:var(--epdc-lime);
+}
+.blog-shell h2 a{color:inherit;text-decoration:none}
+.blog-shell h2 a:hover{color:var(--epdc-cyan)}
+.blog-shell :is(.intro,.journey-invitation,.service-copy p,.studio-copy p,.contact-introduction>p,.blog-entry>p,.blog-heading>p){
+ font-family:var(--epdc-body-font);font-size:var(--epdc-body);font-weight:400;line-height:1.65;letter-spacing:-.02em;color:var(--epdc-text);
+}
+.blog-shell :is(.services-kicker,.blog-heading>p){font-weight:600}
+.blog-shell button{font-family:var(--epdc-body-font);font-size:var(--epdc-action)}
+.blog-shell :is(.choices button,.service-actions button,.scene-next button,.blog-return>a){
+ position:relative;isolation:isolate;display:inline-flex;justify-content:center;align-items:center;gap:10px;
+ padding:14px 24px;min-height:48px;border:1px solid #738387;border-radius:999px;background:transparent;
+ color:#f1f2ee;font-family:var(--epdc-body-font);font-size:var(--epdc-action);font-weight:600;line-height:1.23;letter-spacing:-.025em;text-decoration:none;
+ transition:color .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.blog-shell :is(.choices button,.service-actions button,.scene-next button,.blog-return>a)::before{
+ content:'';position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;
+ background:conic-gradient(from var(--button-glint-angle),transparent 0deg 305deg,#d8ff0020 322deg,#d8ff00 342deg,transparent 360deg);
+ -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;
+ mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;opacity:.7;animation:button-border-glint 7s linear infinite;
+}
+.blog-shell :is(.choices button,.service-actions button,.scene-next button,.blog-return>a):is(:hover,:focus-visible){color:var(--epdc-lime);border-color:var(--epdc-lime);box-shadow:0 0 16px #d8ff0015;background:transparent}
+.blog-shell :is(.choices button,.service-actions button,.scene-next button,.blog-return>a):is(:hover,:focus-visible)::before{opacity:1}
+.blog-shell :is(.service-options button,.studio-story-choice,.blog-pagination a){font-family:var(--epdc-body-font);font-size:var(--epdc-action);line-height:1.4;transition:color .25s ease,text-shadow .25s ease}
+.blog-shell :is(.service-options button,.studio-story-choice,.blog-pagination a):is(:hover,:focus-visible){color:var(--epdc-lime);text-shadow:0 0 12px #d8ff0033}
+@media(max-width:600px){.blog-shell{--epdc-h1:36px;--epdc-h2:24px}}
+@media(prefers-reduced-motion:reduce){
+ .blog-shell :is(.choices button,.service-actions button,.scene-next button,.blog-return>a)::before{animation:none;opacity:0}
+ .blog-shell :is(button,.blog-return>a,.blog-pagination a){transition:none}
+}

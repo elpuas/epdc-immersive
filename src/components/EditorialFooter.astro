@@ -1,0 +1,6 @@
+---
+import {translator,type Locale} from '../lib/i18n';
+import {contactLocations} from '../lib/contact';
+const {locale}=Astro.props as {locale:Locale},t=translator(locale);
+---
+<footer class="site-footer"><small class="copyright">© {new Date().getFullYear()} ElPuas Digital Crafts. <span>{t('Todos los derechos reservados.')}</span></small><ul class="footer-locations" aria-label={t('Teléfonos del estudio')}>{contactLocations.map(location=><li><span class="footer-city">{t(location.city)}</span><a href={location.href}>{location.telephone}</a></li>)}</ul></footer>

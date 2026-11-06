@@ -1,0 +1,42 @@
+---
+import {locales,translator,type Locale} from '../../../lib/i18n';
+import {blogPosts,blogPageCount,blogPath,BLOG_PAGE_SIZE} from '../../../lib/blog';
+import {pageSEO,siteURL} from '../../../lib/seo';
+import {contactLocations} from '../../../lib/contact';
+import SEO from '../../../components/SEO.astro';
+import EditorialHeader from '../../../components/EditorialHeader.astro';
+import EditorialFooter from '../../../components/EditorialFooter.astro';
+import EditorialTerrain from '../../../components/EditorialTerrain.astro';
+import '../../../styles/global.css';
+import '../../../styles/blog.css';
+export function getStaticPaths(){return locales.flatMap(locale=>Array.from({length:blogPageCount(locale)},(_,i)=>({params:{lang:locale,page:i===0?undefined:String(i+1)},props:{locale,page:i+1}})));}
+const {locale,page}=Astro.props as {locale:Locale;page:number},t=translator(locale);
+const posts=blogPosts(locale),count=blogPageCount(locale),visible=posts.slice((page-1)*BLOG_PAGE_SIZE,page*BLOG_PAGE_SIZE);
+const base=pageSEO(locale),path=blogPath(locale,page),url=new URL(path,siteURL).href;
+const title=`${t('En el Bucle.')} — ${t('Blog')} | ElPuas Digital Crafts${page>1?' · '+t('Página')+' '+page:''}`;
+const description=t('Ideas, procesos y aprendizajes de nuestro taller digital.');
+const alternates=locales.filter(lang=>blogPageCount(lang)>=page).map(lang=>({lang,url:new URL(blogPath(lang,page),siteURL).href}));
+const seo={...base,title,description,url,alternates,schema:{'@context':'https://schema.org','@graph':[
+ ...base.schema['@graph'].filter(item=>['Organization','WebSite'].includes(item['@type'])),
+ {'@type':'CollectionPage','@id':url+'#webpage',url,name:title,description,inLanguage:locale,isPartOf:{'@id':siteURL.href+'#website'},mainEntity:{'@id':url+'#posts'}},
+ {'@type':'ItemList','@id':url+'#posts',itemListElement:visible.map((post,i)=>({'@type':'ListItem',position:(page-1)*BLOG_PAGE_SIZE+i+1,url:post.href,name:post.title}))}
+]}};
+---
+<!doctype html><html lang={locale}><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><SEO {locale} {seo}/></head><body class="blog-shell">
+<a class="skip-content" href="#blog-content">{t('Ir al contenido')}</a>
+<EditorialHeader {locale} languagePaths={Object.fromEntries(locales.map(lang=>[lang,blogPath(lang,Math.min(page,blogPageCount(lang)))]))}/>
+<main id="blog-content" tabindex="-1" class="blog-index"><div class="blog-heading"><h1>{t('En el Bucle.')}</h1><p>{description}</p></div>
+<div class="blog-grid">{visible.map(post=><article class="blog-entry" data-blog-reveal><a class="blog-entry-image" href={post.href} tabindex="-1" aria-hidden="true">{post.image&&<img src={post.image} alt="" width="640" height="360" loading="lazy" decoding="async"/>}</a><div class="blog-entry-meta">{post.date&&<time datetime={post.date}>{new Intl.DateTimeFormat(locale,{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}).format(new Date(post.date))}</time>}</div><h2><a href={post.href}>{post.title}</a></h2>{post.description&&<p>{post.description}</p>}</article>)}</div>
+<nav class="blog-pagination" aria-label={t('Paginación del blog')}>{page>1&&<a href={blogPath(locale,page-1)} rel="prev" aria-label={t('Página anterior')}>←</a>}{Array.from({length:count},(_,i)=><a href={blogPath(locale,i+1)} aria-current={page===i+1?'page':undefined} aria-label={`${t('Página')} ${i+1}`}>{i+1}</a>)}{page<count&&<a href={blogPath(locale,page+1)} rel="next" aria-label={t('Página siguiente')}>→</a>}</nav>
+</main>
+<section class="blog-return"><a href={`/${locale}/`}>{t('Volver al recorrido')} <span aria-hidden="true">→</span></a><EditorialTerrain/></section>
+<EditorialFooter {locale}/>
+<script>
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ if(!reduced.matches&&'IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}});},{threshold:.08});
+ document.querySelectorAll('[data-blog-reveal]').forEach(element=>{if(element.getBoundingClientRect().top>innerHeight){element.classList.add('will-reveal');observer.observe(element);}});
+ reduced.addEventListener('change',()=>{if(reduced.matches){observer.disconnect();document.querySelectorAll('.will-reveal').forEach(element=>element.classList.add('is-visible'));}});
+ }
+</script>
+</body></html>

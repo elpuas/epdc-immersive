@@ -1,0 +1,260 @@
+[
+  {
+    "source": "src/content/blog/behind-the-redesign.es.mdx",
+    "sha256": "862eb80ee0db78b69475b21715fecd4028bfa0ad02e1e9591bb60481facd3d98",
+    "lang": "es",
+    "slug": "behind-the-redesign"
+  },
+  {
+    "source": "src/content/blog/behind-the-redesign.it.mdx",
+    "sha256": "3773c628c9cfe29886bdd365966830bd0be8e42dc1175ac46c46e3f3aa201223",
+    "lang": "it",
+    "slug": "behind-the-redesign"
+  },
+  {
+    "source": "src/content/blog/behind-the-redesign.mdx",
+    "sha256": "956bd4b4f3c7e10917bf921649af0471f7ab046789fe045fa9c72ff28be72d65",
+    "lang": "en",
+    "slug": "behind-the-redesign"
+  },
+  {
+    "source": "src/content/blog/come-condividere-il-tuo-nuovo-sito-web-e-iniziare-a-guadagnare-visibilita.it.mdx",
+    "sha256": "4d94ce69c28e55bcccb0d39c0498588dfe762660920c28a428337947f36ae035",
+    "lang": "it",
+    "slug": "come-condividere-il-tuo-nuovo-sito-web-e-iniziare-a-guadagnare-visibilita"
+  },
+  {
+    "source": "src/content/blog/come-usiamo-l-ai-in-epdc.it.mdx",
+    "sha256": "e0610e8f9f35bd0e650ce6d47f991a830e77963ab2eddcb02090aae179901fce",
+    "lang": "it",
+    "slug": "come-usiamo-l-ai-in-epdc"
+  },
+  {
+    "source": "src/content/blog/come-wordpress-sta-integrando-l-ia.it.mdx",
+    "sha256": "181e15764da7f444a422e3e02ff14b1bd30e3252177ae34d90eedd9adf8584cf",
+    "lang": "it",
+    "slug": "come-wordpress-sta-integrando-l-ia"
+  },
+  {
+    "source": "src/content/blog/como-compartir-tu-nuevo-sitio-web-y-empezar-a-ganar-visibilidad.es.mdx",
+    "sha256": "1d592348f283df1eb20366d713561a115eed62e4a11d20bdffa63912a136cd24",
+    "lang": "es",
+    "slug": "como-compartir-tu-nuevo-sitio-web-y-empezar-a-ganar-visibilidad"
+  },
+  {
+    "source": "src/content/blog/como-usamos-ia-en-epdc.es.mdx",
+    "sha256": "dc8c8dc066083ff244a487ef5c0bba9a0124f173028ab029ce05c36babc01de6",
+    "lang": "es",
+    "slug": "como-usamos-ia-en-epdc"
+  },
+  {
+    "source": "src/content/blog/como-wordpress-esta-integrando-la-ia.es.mdx",
+    "sha256": "07079f18f9222e5a63e98483739060efabe61e186d3a2ab531ab8cf1bd5519d1",
+    "lang": "es",
+    "slug": "como-wordpress-esta-integrando-la-ia"
+  },
+  {
+    "source": "src/content/blog/guia-rapida-llms.es.mdx",
+    "sha256": "41d8a26c6340610af1a59550d3e338736c06c890bbe381258dd679c5ff868eb1",
+    "lang": "es",
+    "slug": "guia-rapida-llms"
+  },
+  {
+    "source": "src/content/blog/how-to-share-your-new-website-and-start-gaining-visibility.en.mdx",
+    "sha256": "b1d0a71f95db67a0795abca33ed525c08045d11256f5407f148fb59ddff9d086",
+    "lang": "en",
+    "slug": "how-to-share-your-new-website-and-start-gaining-visibility"
+  },
+  {
+    "source": "src/content/blog/how-we-use-ai-at-epdc.en.mdx",
+    "sha256": "1e9a30d422cfc070fc44c319e01af8226c966419da8765d731e263a0aa602cbc",
+    "lang": "en",
+    "slug": "how-we-use-ai-at-epdc"
+  },
+  {
+    "source": "src/content/blog/how-wordpress-is-integrating-ai.en.mdx",
+    "sha256": "339d88eb98750b4adf2227b5346b9b101995ad409871ee1f53888e149579d226",
+    "lang": "en",
+    "slug": "how-wordpress-is-integrating-ai"
+  },
+  {
+    "source": "src/content/blog/invisible-risk-unrenewed-premium-plugins.en.mdx",
+    "sha256": "ed40251e6682f1b304f2390b0cb81ee6cf8a6d52403aa31ef39181eed7bb93b8",
+    "lang": "en",
+    "slug": "invisible-risk-unrenewed-premium-plugins"
+  },
+  {
+    "source": "src/content/blog/la-mayor-amenaza-para-tu-wordpress-no-es-un-hacker.es.mdx",
+    "sha256": "48fca919b09f41bee05d04336cde5be5ab898415c13c3582535856b27033f8e1",
+    "lang": "es",
+    "slug": "la-mayor-amenaza-para-tu-wordpress-no-es-un-hacker"
+  },
+  {
+    "source": "src/content/blog/la-piu-grande-minaccia-per-wordpress-non-e-un-hacker.it.mdx",
+    "sha256": "a6aecbd799ae917e2dc6328f1e687bec7ee09fd6197f7e37da5ad9a2093f69aa",
+    "lang": "it",
+    "slug": "la-piu-grande-minaccia-per-wordpress-non-e-un-hacker"
+  },
+  {
+    "source": "src/content/blog/lecciones-de-un-proyecto-mal-definido-agencias-wordpress.es.mdx",
+    "sha256": "7327f857450ee5213a386d37a1c5a90b43c39b2b005b144eef433cc9ae9c533a",
+    "lang": "es",
+    "slug": "lecciones-de-un-proyecto-mal-definido-agencias-wordpress"
+  },
+  {
+    "source": "src/content/blog/llms-guide.en.mdx",
+    "sha256": "519e99999f152a6c35411f17075d3ee638ed520ec0d2d431758dbd66c139d4fa",
+    "lang": "en",
+    "slug": "llms-guide"
+  },
+  {
+    "source": "src/content/blog/llms-guide.it.mdx",
+    "sha256": "3ae7d8ce18d95d7514deee728fe9471f060354e662b65e41092568906389bf37",
+    "lang": "it",
+    "slug": "llms-guide"
+  },
+  {
+    "source": "src/content/blog/mantenimiento-web.en.mdx",
+    "sha256": "368e4b67817f685fc01faf22aba269d16fb44e58bb884ed0423d4681091dbe4c",
+    "lang": "en",
+    "slug": "mantenimiento-web"
+  },
+  {
+    "source": "src/content/blog/mantenimiento-web.es.mdx",
+    "sha256": "f5b037da26dfe254e251820041c728aae219653dbc06849083db2ddaa18cd61e",
+    "lang": "es",
+    "slug": "mantenimiento-web"
+  },
+  {
+    "source": "src/content/blog/mantenimiento-web.it.mdx",
+    "sha256": "28d98b0924de478e5a40e4319383baab33fbed7d431a7920a97c3390abce08f1",
+    "lang": "it",
+    "slug": "mantenimiento-web"
+  },
+  {
+    "source": "src/content/blog/php-wordpress-vulnerabilities-website-maintenance.en.mdx",
+    "sha256": "ef019080185cd3c6d4e96627414e78305fab99a17eef3ba63db3778c1f5b4405",
+    "lang": "en",
+    "slug": "php-wordpress-vulnerabilities-website-maintenance"
+  },
+  {
+    "source": "src/content/blog/riesgo-invisible-plugins-premium-no-renovados.es.mdx",
+    "sha256": "d762b19a21fdf95127369c28fc3cbda1c8544e99eaf33a321359bc10eeb4d83d",
+    "lang": "es",
+    "slug": "riesgo-invisible-plugins-premium-no-renovados"
+  },
+  {
+    "source": "src/content/blog/rischio-invisibile-plugin-premium-non-rinnovati.it.mdx",
+    "sha256": "dd6b418a78b91a79b2405d94c0a6c7dfc800ca44e133b7a3a7d889dc6ca84c3c",
+    "lang": "it",
+    "slug": "rischio-invisibile-plugin-premium-non-rinnovati"
+  },
+  {
+    "source": "src/content/blog/the-biggest-threat-to-your-wordpress-is-not-a-hacker.en.mdx",
+    "sha256": "73c87ab50a61948c832fb81af58a88fa875a3d527863bffb9e9f470cdf9a6906",
+    "lang": "en",
+    "slug": "the-biggest-threat-to-your-wordpress-is-not-a-hacker"
+  },
+  {
+    "source": "src/content/blog/top-faq-about-our-services.es.mdx",
+    "sha256": "a2f9ddaf227ae44db9a89acb30ade5982412967a95ba4bdea76269f88e5b9ad6",
+    "lang": "es",
+    "slug": "top-faq-about-our-services"
+  },
+  {
+    "source": "src/content/blog/top-faq-about-our-services.it.mdx",
+    "sha256": "8f44bc06830128dc8cce3c7c481e4a88af03f852acf72a6e8743e0a11772a755",
+    "lang": "it",
+    "slug": "top-faq-about-our-services"
+  },
+  {
+    "source": "src/content/blog/top-faq-about-our-services.mdx",
+    "sha256": "09fb96defe3410fe831ee505c5eb407e9dc480d6863754c17f41e02caf63820d",
+    "lang": "en",
+    "slug": "top-faq-about-our-services"
+  },
+  {
+    "source": "src/content/blog/vulnerabilidades-php-wordpress-mantenimiento.es.mdx",
+    "sha256": "3218dd24c4f25180dbaf1b9e6d7cc3b5b6f0f0ee55aeb04e05a524ba2e29424b",
+    "lang": "es",
+    "slug": "vulnerabilidades-php-wordpress-mantenimiento"
+  },
+  {
+    "source": "src/content/blog/vulnerabilita-php-wordpress-manutenzione-sito.it.mdx",
+    "sha256": "2bfb2fce29e6dd19061701f0f7f9222225e48a048d99caff471a848e576e5b4f",
+    "lang": "it",
+    "slug": "vulnerabilita-php-wordpress-manutenzione-sito"
+  },
+  {
+    "source": "src/content/blog/wordpress-6-9-lo-nuevo.mdx",
+    "sha256": "0ff12cbfb35d61e8ed17902c9e8bca5e1f177d2b1968e33d587fe76a9e8d0672",
+    "lang": "es",
+    "slug": "wordpress-6-9-lo-nuevo"
+  },
+  {
+    "source": "src/content/blog/wordpress-6-9-novita.it.mdx",
+    "sha256": "69bc75d6e3c77969b1b022e41a5bd954d526fbc338bc758cf8e45db6593c501d",
+    "lang": "it",
+    "slug": "wordpress-6-9-novita"
+  },
+  {
+    "source": "src/content/blog/wordpress-6-9-whats-new.en.mdx",
+    "sha256": "61a069c8cdeae67a8b38e666597b4c43c4f98c0a5c2af74567818e3fbe463e36",
+    "lang": "en",
+    "slug": "wordpress-6-9-whats-new"
+  },
+  {
+    "source": "src/content/blog/wordpress-7-1-cosa-cambia-e-perche-e-importante-per-la-tua-azienda.it.mdx",
+    "sha256": "252bf5a62fe3ac31a3069ea87d61633e5280430c391265d70c0e0408592bab67",
+    "lang": "it",
+    "slug": "wordpress-7-1-cosa-cambia-e-perche-e-importante-per-la-tua-azienda"
+  },
+  {
+    "source": "src/content/blog/wordpress-7-1-que-cambia-y-por-que-importa-para-tu-negocio.es.mdx",
+    "sha256": "009026472082c787e36f6a5d19178ddabafc97f958da52a7697788673c28fbde",
+    "lang": "es",
+    "slug": "wordpress-7-1-que-cambia-y-por-que-importa-para-tu-negocio"
+  },
+  {
+    "source": "src/content/blog/wordpress-7-1-what-changes-and-why-it-matters-for-your-business.en.mdx",
+    "sha256": "1bc9b4818763f242ca7b7ab4c5eac52072ee15d5dfbc2633c319de7b7bd98337",
+    "lang": "en",
+    "slug": "wordpress-7-1-what-changes-and-why-it-matters-for-your-business"
+  },
+  {
+    "source": "src/content/blog/wordpress-7-studio-inicio-wordpress-ai-native.es.mdx",
+    "sha256": "9dcef63617719c0599b478b4ca3c9816021933a680ab76d87312b5945dfebc94",
+    "lang": "es",
+    "slug": "wordpress-7-studio-inicio-wordpress-ai-native"
+  },
+  {
+    "source": "src/content/blog/wordpress-7-studio-inizio-wordpress-ai-native.it.mdx",
+    "sha256": "1c47874cbb857042f92082b1703bab2df278f13cb63a2e6c6e7c0aeef20b047f",
+    "lang": "it",
+    "slug": "wordpress-7-studio-inizio-wordpress-ai-native"
+  },
+  {
+    "source": "src/content/blog/wordpress-7-studio-the-start-of-ai-native-wordpress.en.mdx",
+    "sha256": "bdca4f2bd3f0e67ba51ead94553e07caf08d63f1c68accc811d36e5ce8b2d136",
+    "lang": "en",
+    "slug": "wordpress-7-studio-the-start-of-ai-native-wordpress"
+  },
+  {
+    "source": "src/content/blog/wordpress-efficiente-se-fatto-bene.it.mdx",
+    "sha256": "170f4cb433783a119ebc660c7476750d3298ce459983fcee92d4bd81d55391d6",
+    "lang": "it",
+    "slug": "wordpress-efficiente-se-fatto-bene"
+  },
+  {
+    "source": "src/content/blog/wordpress-es-tan-bueno-como-quien-lo-construye.es.mdx",
+    "sha256": "65933ad350ed0991181eb442ce618755911149ff786da7bed740dd5449b7cb12",
+    "lang": "es",
+    "slug": "wordpress-es-tan-bueno-como-quien-lo-construye"
+  },
+  {
+    "source": "src/content/blog/wordpress-just-as-fast-when-built-right.en.mdx",
+    "sha256": "4f04b1d1b77e2655c2bb83f1c05a61b3f9d5f89a0d357cd3f8d0338a8e36f088",
+    "lang": "en",
+    "slug": "wordpress-just-as-fast-when-built-right"
+  }
+]

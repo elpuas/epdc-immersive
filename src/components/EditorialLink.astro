@@ -1,0 +1,8 @@
+---
+import posts from '../lib/blog-posts.json';
+const {href:originalHref,...props}=Astro.props;
+const href=typeof originalHref==='string'&&originalHref.startsWith('https://elpuasdigitalcrafts.com/')&&posts.some(post=>post.href===new URL(originalHref).pathname)?new URL(originalHref).pathname:originalHref;
+const known=posts.some(post=>post.href===href||post.href===href+'/');
+const target=typeof href==='string'&&/^\/(es|en|it)\//.test(href)&&!known&&!/^\/(es|en|it)\/(?:blog\/?)?$/.test(href)?'https://elpuasdigitalcrafts.com'+href:href;
+---
+<a href={target} {...props}><slot/></a>

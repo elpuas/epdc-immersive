@@ -1,0 +1,48 @@
+/* Conventional editorial pages, sharing the immersive site's brand and type scale. */
+.blog-shell{overflow-x:clip}
+.blog-shell .site-header{display:flex;justify-content:space-between;align-items:center;padding:22px 4.5vw;min-height:108px;background:#000;pointer-events:auto}
+.blog-shell .site-header .brand-mark{width:64px;height:64px}
+.blog-shell .header-blog[aria-current=page]{color:#d8ff00}
+.blog-shell .language-links a{display:grid;place-items:center;width:44px;height:44px;border:1px solid transparent;border-radius:50%;font-size:12px;letter-spacing:.05em;text-decoration:none;color:#90a2a6}
+.blog-shell .language-links a[aria-current=page]{border-color:#d8ff0030;color:#d8ff00}
+.blog-shell .language-links a:hover{color:#00fff3}
+.blog-index{max-width:1200px;margin:40px auto 0;padding:0 36px;text-align:left;animation:blog-intro .7s ease both}
+.blog-heading{margin-bottom:54px}
+.blog-heading h1{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:54px;line-height:1.02;letter-spacing:-.04em;margin:0 0 20px;background:linear-gradient(90deg,#d8ff00 36%,#00fff3);background-clip:text;-webkit-background-clip:text;color:transparent;width:fit-content;max-width:100%}
+.blog-heading p{font-family:Montserrat,system-ui,sans-serif;font-size:16px;font-weight:600;line-height:1.65;letter-spacing:-.02em;margin:0;color:#d5dfe0}
+.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;row-gap:48px}
+.blog-entry{min-width:0;background:none;border:0;box-shadow:none}
+.blog-entry-image{display:block;overflow:hidden;aspect-ratio:16/10;background:#071215}
+.blog-entry-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.blog-entry:hover img{transform:scale(1.035)}
+.blog-entry-meta{font-family:Montserrat,system-ui,sans-serif;font-size:11px;line-height:1.6;color:#00d6d0;margin-top:16px;letter-spacing:.04em}
+.blog-entry h2{font-family:Montserrat,system-ui,sans-serif;font-size:19px;font-weight:600;line-height:1.4;letter-spacing:-.035em;margin:10px 0 12px}
+.blog-entry h2 a{text-decoration:none;color:#f1f2ee;transition:color .25s ease}
+.blog-entry h2 a:hover,.blog-entry h2 a:focus-visible{color:#d8ff00}
+.blog-entry p{font-family:Montserrat,system-ui,sans-serif;font-size:16px;line-height:1.65;letter-spacing:-.02em;color:#aabcc0;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.blog-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin:64px 0 0}
+.blog-pagination a{display:grid;place-items:center;min-width:44px;min-height:44px;text-decoration:none;color:#c5d2d4;font-size:16px;transition:color .25s ease}
+.blog-pagination a[aria-current=page],.blog-pagination a:hover{color:#d8ff00}
+.blog-return{position:relative;text-align:center;padding:70px 0 0;min-height:320px;overflow:hidden}
+.blog-return>a{position:relative;z-index:1;display:inline-flex;align-items:center;gap:12px;min-height:44px;color:#d8ff00;font:600 16px Montserrat,system-ui,sans-serif;text-decoration:none}
+.blog-return>a:hover{color:#00fff3}
+.editorial-terrain{height:240px;width:100%;pointer-events:none}
+.editorial-terrain svg{width:100%;height:100%;display:block}
+.editorial-route{stroke-dasharray:12 140;animation:editorial-glint 12s linear infinite}
+@keyframes editorial-glint{to{stroke-dashoffset:-304}}
+.blog-shell .site-footer{position:relative;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;padding:18px 4.5vw 22px;background:#000;font-size:10px;color:#8c9a9e}
+.blog-shell .copyright{font-size:10px;line-height:1.7}.blog-shell .footer-locations{flex-wrap:wrap;gap:24px}.blog-shell .footer-locations li{display:flex;flex-direction:row;align-items:center;gap:8px}.blog-shell .footer-city,.blog-shell .footer-locations a{font-size:10px}
+.will-reveal{opacity:0;transform:translateY(14px);transition:opacity .65s ease,transform .65s ease}
+.will-reveal.is-visible{opacity:1;transform:none}
+@keyframes blog-intro{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.blog-index{padding:0 6vw}}
+@media(max-width:600px){.blog-shell .site-header{padding:18px 6vw;min-height:100px}.blog-shell .brand-mark img{width:58px;height:58px}.blog-shell .language-links{gap:3px}.blog-shell .language-links a{width:36px;min-width:36px;padding:6px}.blog-index{margin-top:34px;padding:0 6vw}.blog-heading{margin-bottom:34px}.blog-heading h1{font-size:36px}.blog-heading p{font-size:16px}.blog-grid{grid-template-columns:1fr;gap:36px}.blog-entry h2{font-size:19px}.blog-pagination{margin-top:42px}.blog-return{padding-top:44px}.blog-shell .site-footer{padding:16px 6vw}.blog-shell .footer-locations{display:flex;gap:12px;flex-wrap:wrap}.blog-shell .footer-locations a{white-space:nowrap;min-height:28px}.blog-shell .footer-city{white-space:nowrap}}
+@media(prefers-reduced-motion:reduce){.blog-index{animation:none}.editorial-route{animation:none;stroke-dasharray:none}.blog-entry img,.blog-entry h2 a,.blog-pagination a,.will-reveal{transition:none}.will-reveal{opacity:1;transform:none}.blog-entry:hover img{transform:none}}
+.blog-shell .footer-locations{min-width:0;max-width:100%;flex-shrink:1}
+.editorial-terrain svg{overflow:hidden}
+
+
+/* Reuse the actual home terrain; no alternate illustration or central-line effect. */
+.blog-shell .editorial-terrain{position:relative;height:380px;overflow:hidden}
+.blog-shell .blog-terrain-canvas{position:absolute;inset:0}
+.blog-shell .blog-terrain-canvas canvas{display:block}

@@ -1,8 +1,8 @@
 ---
 import { pageSEO, indexable } from '../lib/seo';
 import type { Locale } from '../lib/i18n';
-const {locale} = Astro.props as {locale:Locale};
-const seo=pageSEO(locale);
+const {locale,seo:customSEO,ogType="website"} = Astro.props;
+const seo=customSEO??pageSEO(locale as Locale);
 ---
 <title>{seo.title}</title>
 <meta name="description" content={seo.description}/>
@@ -10,7 +10,7 @@ const seo=pageSEO(locale);
 <link rel="canonical" href={seo.url}/>
 {seo.alternates.map(item=><link rel="alternate" hreflang={item.lang} href={item.url}/>)}
 <link rel="alternate" hreflang="x-default" href={seo.alternates[0].url}/>
-<meta property="og:type" content="website"/>
+<meta property="og:type" content={ogType}/>
 <meta property="og:title" content={seo.title}/>
 <meta property="og:description" content={seo.description}/>
 <meta property="og:url" content={seo.url}/>

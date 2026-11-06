@@ -24,7 +24,7 @@ export default function Terrain({ reduced }: { reduced: boolean }) {
       v.y+=sin(v.z*.12+time*.17)*.10*side*motion;
       p=v; vec4 mv=modelViewMatrix*vec4(v,1.);depth=-mv.z;gl_Position=projectionMatrix*mv; }`,
       fragmentShader: `uniform float time; uniform float motion; varying vec3 p; varying float depth;
-      void main(){float fade=1.-smoothstep(24.,100.,depth);
+      void main(){float fade=1.-smoothstep(32.,125.,depth);
       float sweep=pow(max(0.,sin(p.z*.16+p.x*.10+time*.24)),38.)*motion;
       float sparse=pow(max(0.,sin(p.x*.79-p.z*.41)),14.);
       float mountain=smoothstep(.8,3.5,p.y);
@@ -34,11 +34,11 @@ export default function Terrain({ reduced }: { reduced: boolean }) {
       float pocket=pow(max(0.,sin(p.x*.61+p.z*.29)),8.);
       float cyanGlow=cyanWave*pocket*mountain*motion;
       float limeGlow=limeWave*(1.-pocket)*mountain*motion;
-      vec3 base=vec3(.025,.46,.48);
+      vec3 base=vec3(.045,.56,.58);
       vec3 color=mix(base,vec3(.08,.95,.89),clamp(sweep*sparse+cyanGlow*.65,0.,1.));
       color=mix(color,vec3(.847,1.,0.),limeGlow*.68);
       float accent=max(cyanGlow,limeGlow);
-      gl_FragColor=vec4(color,(.38+sweep*sparse*.42+accent*.24)*fade); }`
+      gl_FragColor=vec4(color,(.55+sweep*sparse*.30+accent*.20)*fade); }`
     });
     // Starts exactly on a grid axis; then deliberately leaves its straight rules.
     const path = new THREE.CurvePath<THREE.Vector3>();
@@ -83,9 +83,9 @@ export default function Terrain({ reduced }: { reduced: boolean }) {
     }
   });
   return <group position={[0,-1,-22]}>
-    <mesh geometry={resources.ground}><meshBasicMaterial color="#030708" /></mesh>
+    <mesh geometry={resources.ground}><meshBasicMaterial color="#050c0e" /></mesh>
     <lineSegments geometry={resources.edges} material={resources.ink}/>
-    <gridHelper args={[400,160,'#244044','#14252a']} position={[0,.015,0]}/>
+    <gridHelper args={[400,160,'#34575c','#213a40']} position={[0,.015,0]}/>
     <mesh geometry={resources.routeGeometry} material={resources.routeMaterial}/>
     <points geometry={resources.starsGeometry} material={resources.starsMaterial}/>
   </group>;

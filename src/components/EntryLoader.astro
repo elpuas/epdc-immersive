@@ -1,0 +1,10 @@
+---
+import {translator,type Locale} from '../lib/i18n';
+const {locale}=Astro.props as {locale:Locale};const t=translator(locale);
+---
+<div id="entry-loader" class="entry-loader" data-phase="loading" role="status" aria-label={t('Preparando el recorrido')}><img src="/brand/logo.webp" width="88" height="88" alt="ElPuas Digital Crafts" fetchpriority="high"/></div>
+<noscript><style>.entry-loader{display:none!important}</style></noscript>
+<script is:inline>
+// Never leave the readable page behind a loader if hydration or WebGL fails.
+window.__epdcLoaderSafety=setTimeout(function(){var loader=document.getElementById('entry-loader');if(loader){loader.hidden=true;document.documentElement.dataset.entryFailed='true';}},12000);
+</script>

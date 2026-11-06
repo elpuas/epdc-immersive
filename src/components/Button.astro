@@ -1,0 +1,6 @@
+---
+const {href,label,type='button'}=Astro.props;
+// Keep the MDX intact; unmigrated service/contact destinations stay on the existing site.
+const target=href&&/^\/(es|en|it)\/(contact|services)(?:\/|$|#)/.test(href)?'https://elpuasdigitalcrafts.com'+href:href;
+---
+{target?<a class="post-action" href={target}>{label}</a>:<button class="post-action" type={type}>{label}</button>}

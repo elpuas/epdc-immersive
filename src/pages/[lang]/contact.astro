@@ -1,0 +1,6 @@
+---
+import {locales} from '../../lib/i18n';
+export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
+// Legacy inline MDX contact links remain valid until standalone contact migration.
+return Astro.redirect(`https://elpuasdigitalcrafts.com/${Astro.params.lang}/contact/`);
+---

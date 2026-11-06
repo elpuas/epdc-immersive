@@ -1,0 +1,29 @@
+/* Scoped article design. The home and blog index keep their existing layouts. */
+.post-main{max-width:1100px;margin:40px auto 0;padding:0 36px;text-align:left;animation:blog-intro .7s ease both}
+.post-main .post-heading{display:block;position:static;padding:0;margin:0 auto 40px;max-width:100%;background:none;pointer-events:auto}
+.post-back{display:inline-flex;align-items:center;min-height:44px;font:600 14px Montserrat,system-ui,sans-serif;color:#aabcc0;text-decoration:none;margin-bottom:20px;transition:color .25s ease}
+.post-back:hover{color:#d8ff00}
+.post-heading h1{font-family:Inter,system-ui,sans-serif;font-size:54px;font-weight:700;line-height:1.08;letter-spacing:-.04em;background:linear-gradient(90deg,#d8ff00 36%,#00fff3);background-clip:text;-webkit-background-clip:text;color:transparent;margin:0 0 24px}
+.post-meta{display:flex;flex-wrap:wrap;gap:20px;color:#8faeb2;font:12px/1.7 Montserrat,system-ui,sans-serif}
+.post-body{max-width:760px;margin:auto;font-family:Montserrat,system-ui,sans-serif;font-size:16px;line-height:1.85;letter-spacing:-.01em;color:#d5dfe0;overflow-wrap:anywhere}
+.post-body p{margin:0 0 24px}
+.post-body h2{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:29px;line-height:1.2;letter-spacing:-.035em;color:#d8ff00;margin:44px 0 20px}
+.post-body h3{font-family:Inter,system-ui,sans-serif;font-size:23px;line-height:1.3;letter-spacing:-.025em;margin:32px 0 16px;color:#e7eeee}
+.post-body h4{font-size:19px;line-height:1.4;color:#e7eeee}
+.post-body a{color:#d8ff00;text-underline-offset:4px}.post-body a:hover{color:#00fff3}
+.post-body ul,.post-body ol{padding-left:26px;margin:0 0 26px}.post-body li{margin:8px 0}.post-body li::marker{color:#00ccc6}
+.post-body img,.post-body video{display:block;width:100%;max-width:100%;height:auto;margin:28px 0}
+.post-body .blog-hero-image{margin-bottom:36px}.post-body .blog-hero-image:first-child{margin-top:0}
+.post-body .blog-hero-image:first-child img{margin-top:0}
+.post-body blockquote{border-left:2px solid #d8ff00;padding:6px 0 6px 22px;margin:32px 0;color:#e5eeee;font-style:italic}.post-body blockquote p:last-child{margin:0}
+.post-body pre{max-width:100%;overflow-x:auto;padding:22px;background:#071216!important;border:1px solid #21383d;border-radius:0;font-size:14px;line-height:1.75;scrollbar-width:thin;scrollbar-color:#849b22 #0a1518}
+.post-body :not(pre)>code{font-size:.9em;color:#9ae1da;background:#102024;padding:2px 5px}
+.post-body table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:28px 0;font-size:14px}.post-body th,.post-body td{padding:12px 16px;border-bottom:1px solid #31494d;text-align:left}.post-body th{color:#00fff3}
+.post-body hr{border:0;border-top:1px solid #31494d;margin:36px 0}
+.post-body .post-action{position:relative;display:inline-flex;align-items:center;justify-content:center;font:600 14px/1.4 Montserrat,system-ui,sans-serif;color:#d8ff00;border:1px solid #738387;border-radius:999px;padding:14px 24px;min-height:48px;background:none;text-decoration:none;transition:color .25s,border-color .25s,box-shadow .25s;max-width:100%;text-align:center}
+.post-body .post-action:hover{border-color:#d8ff00;box-shadow:0 0 16px #d8ff0015}
+.post-related{max-width:1000px;margin:76px auto 0;padding-top:34px;border-top:1px solid #25383c}
+.post-related>h2{font:700 29px/1.2 Inter,system-ui,sans-serif;color:#d8ff00;letter-spacing:-.035em;margin:0 0 30px}
+.post-related .blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.post-main{margin-top:28px;padding:0 6vw}.post-heading h1{font-size:36px}.post-heading{margin-bottom:28px}.post-meta{gap:12px}.post-body{font-size:16px}.post-body h2{font-size:29px}.post-body pre{padding:16px}.post-related .blog-grid{grid-template-columns:1fr}.post-related{margin-top:48px}}
+@media(prefers-reduced-motion:reduce){.post-main{animation:none}.post-back,.post-body .post-action{transition:none}}

@@ -1,6 +1,8 @@
 ---
 import {translator, services, studioStory, type Locale} from '../lib/i18n';
 import {editorial} from '../lib/editorial';
+import {portfolioProjects} from '../lib/portfolio';
+import {contactLocations} from '../lib/contact';
 const {locale}=Astro.props as {locale:Locale};
 const t=translator(locale),content=editorial[locale];
 ---
@@ -11,9 +13,10 @@ const t=translator(locale),content=editorial[locale];
  <nav aria-label={t('Idioma')}><a href="/es/" lang="es">Español</a><a href="/en/" lang="en">English</a><a href="/it/" lang="it">Italiano</a></nav>
  <section id="services"><h3>{t('Servicios')}</h3>{services.map(([id,name,description])=><section><h4>{t(name)}</h4><p>{t(description)}</p></section>)}</section>
  <section><h3>{t('Nuestro equipo')}</h3><ul><li>Catalina Valverde — {t('CEO y Directora de Contenido')}</li><li>Alfredo Navas Fernandini — CTO</li><li>Gianfranco Navas — Lead Frontend Developer</li></ul></section>
- <section><h3>{t('Proyectos')}</h3>{content.projects.map(project=><article><h4><a href={project.href}>{project.title}</a></h4><p>{project.description}</p></article>)}</section>
+ <section><h3>{t('Proyectos')}</h3>{portfolioProjects(locale).map(project=><article><h4><a href={project.href}>{project.title}</a></h4><p>{project.description}</p></article>)}</section>
  <section><h3>{t('Blog')}</h3><ul>{content.articles.map(post=><li><a href={post.href}>{post.title}</a></li>)}</ul></section>
- <p>{t('Los casos completos y artículos se conservan en el sitio actual mientras preparamos esta nueva experiencia.')}</p>
+
  <a href={`https://elpuasdigitalcrafts.com/${locale}/contact/`}>{t('Contactar al estudio ↗')}</a>
+ <section><h3>{t('Teléfonos del estudio')}</h3><ul>{contactLocations.map(location=><li>{t(location.city)} — <a href={location.href}>{location.telephone}</a></li>)}</ul></section>
  </article>
 </details>

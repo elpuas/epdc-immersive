@@ -1,10 +1,10 @@
 # SEO, structured data and multilingual foundation
 
-Supported locales: es, en, it. Routes: /es/, /en/, /it/. Root redirects to Spanish. The current prototype does not yet migrate the old article/case-study routes; these still link to the existing website.
+Supported locales: es, en, it. Routes: /es/, /en/, /it/. Root redirects to Spanish. All 43 existing blog articles are migrated at their original language/slug paths. Case studies remain linked to the existing website.
 
 ## Content delivery
 
-Every locale has real Astro-rendered HTML in a user-accessible reading disclosure below the experience. This is not a hidden crawler-only block. It remains usable without JavaScript or WebGL. Core services, people and selected editorial metadata are shared with the experience. The immersive UI and its navigation are translated; interface translations are draft and need editorial review. No MDX article or case-study body has been machine-translated or modified.
+The immersive homes retain a noscript reading fallback; no visible reading disclosure is appended to the experience. Blog indexes and complete article bodies are Astro-rendered HTML, readable without JavaScript or WebGL. Core services, people and selected editorial metadata are shared with the experience. The immersive UI and its navigation are translated; interface translations are draft and need editorial review. No MDX article or case-study body has been machine-translated or modified.
 
 ## Metadata and entities
 
@@ -14,7 +14,7 @@ Localized title/description, lang, canonical, reciprocal hreflang with x-default
 
 INDEXABLE defaults false: noindex meta and robots disallow on previews. This is intentional for unfinished prototypes. Production requires an explicit HTTPS SITE_URL origin and INDEXABLE=true. Do not activate these until URLs, content migration and deployment destination are approved. robots.txt is not authentication. Canonicals currently target the existing production origin as the intended replacement; change SITE_URL if the final destination differs.
 
-Sitemap includes only built language homes, not missing article/service routes. It will need expansion during migration. No fabricated lastmod timestamps. llms.txt is an optional link index, not an established ranking mechanism or a guarantee of visibility. The substantive foundation is accessible original content and clear structure.
+Sitemap includes language homes, all nine paginated blog indexes and all 43 complete articles. It excludes unmigrated service/case routes and the temporary legacy contact redirects. No fabricated lastmod timestamps. llms.txt is an optional link index, not an established ranking mechanism or a guarantee of visibility. The substantive foundation is accessible original content and clear structure.
 
 ## Preserving existing content
 
@@ -22,9 +22,9 @@ content-inventory.json records source paths, languages, titles, explicit slugs a
 
 ## Before production
 
-- Migrate existing MDX and assets with unchanged content/URLs; compare inventory hashes.
-- Verify per-document translation relationships; do not infer equivalence from filenames alone.
-- Add Article/BreadcrumbList only on actual article/case reading pages, with factual authors/dates/images.
+- Blog migration complete: scripts/check-blog-migration.mjs verifies all 43 original/local MDX hashes, assets and built article routes. Portfolio migration remains pending.
+- Fourteen reviewed translation groups are recorded in src/lib/blog-translations.json, complementing explicit source translationKey values. A Spanish-only post stays unpaired. No equivalents are invented.
+- BlogPosting schema now uses factual article authors, dates and images; no generated publication dates or authors.
 - Check status codes, redirects, canonical consistency, sitemap URL accessibility and localized internal links.
 - Review translations with Alfredo; check keyboard, headings, layout and reading disclosure.
 - Validate deployed JSON-LD with Google tools and monitor Search Console after publication.

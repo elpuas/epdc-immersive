@@ -49,3 +49,26 @@ Station reading scale: arrival camera distance now fits the 10 × 6.5 world-unit
 Implemented /es/, /en/, /it/ and root redirect; translated interactive UI and metadata; same-language editorial metadata/links sourced from original MDX; reciprocal hreflang, canonical, OG/Twitter summary and factual JSON-LD graph; Astro-rendered user-accessible reading disclosure; sitemap.xml, robots.txt, optional llms.txt. Preview uses noindex/disallow by default. Added env example and SEO/i18n guidance.
 
 Verified: build passed; check:seo passed for all languages (HTML language, metadata, JSON-LD parsing, localized reading content, alternates, sitemap). All 73 original MDX hashes unchanged. Editorial images referenced locally exist. English interactive UI and switching to Italian inspected in browser. New UI translations remain drafts for Alfredo’s review. No complete MDX migration, social image, deployed validation or indexation activation yet. Existing large-bundle warning remains.
+
+## Persistent shell — 2026-11-02
+
+Header now contains only the original ElPuas logo and ES/EN/IT language links. Removed section navigation from header; station buttons and return-to-start control remain. Footer shows public cities/telephone links supplied by Alfredo plus localized copyright; email and old external-site footer link removed from immersive frame. Logo uses a restrained CSS glow cycle, disabled for reduced motion. Core phone contacts also present in Astro reading HTML. Intro uses slogan, digital-artisan eyebrow and short localized studio introduction. No new addresses or office claims added.
+
+Footer refinement: copyright, cities and telephone links now share one continuous row. On narrow screens the footer scrolls horizontally instead of shrinking text or wrapping. Camera reserved margins reduced accordingly.
+
+## Entrance sequence
+
+Server-rendered black logo loader replaces the previous visible fallback flash. On the first rendered Three.js frame (or no-WebGL fallback), the same loader logo transitions toward the measured header logo position; heading fades in, localized subtitle types with stable reserved text layout, then invitation/buttons appear. Full subtitle remains available to screen readers. Reduced motion skips sequence; Escape skips it; bounded fallback prevents a loader trap if startup fails. Screenshot-only route bypasses intro animation. Intro copy follows the reviewed headline/directions in chat, localized ES/EN/IT.
+
+## Blog index — 2026-11-02
+- Added conventional Astro blog indexes in ES/EN/IT, six posts per page, three pages per locale; shared 54px desktop heading, 19px card titles and 16px body scale, open cards, subtle reveals and lightweight wireframe footer.
+- Imported metadata and referenced images from the read-only original MDX: 15 ES / 14 EN / 14 IT. Source hashes recorded in docs/blog-index-inventory.json; article bodies remain in the original project. Card links continue to the original full articles until detail-page migration.
+- Header BLOG now opens the local index. Added canonical/alternate metadata, CollectionPage and ItemList schema, sitemap pages and build assertions.
+- Build, SEO checks and whitespace checks passed. Browser checked desktop images and page 2 navigation; fixed inherited footer overflow found at 390px. No push or deployment.
+
+## Full blog migration — 2026-11-02 (supersedes index-only status)
+- Migrated 43 complete MDX articles unchanged: 15 ES, 14 EN, 14 IT. Original and local hashes, dependencies and routes are verified in docs/blog-migration-inventory.json and scripts/check-blog-migration.mjs.
+- Article templates use scoped post.css, existing header/footer shared with the index, a 760px reading column, 54px desktop H1 / 29px body H2 / 16px text, optimized original images, readable code blocks and related articles. Existing home and index appearance preserved.
+- Index and related links now open local articles. Fourteen verified translation groups link corresponding articles; the Spanish-only article switches other languages to their indexes. Source MDX was not rewritten.
+- Added BlogPosting JSON-LD, article social metadata and 43 sitemap entries. Existing service/contact destinations remain on the legacy site; three lightweight contact redirect routes preserve literal MDX contact links.
+- Build, SEO and full migration checks passed. Browser verified index → article, ES → EN equivalent, 390px article width without overflow, independently scrolling code. No push, deployment or indexing activation.

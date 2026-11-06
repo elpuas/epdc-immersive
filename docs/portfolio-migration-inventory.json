@@ -1,0 +1,308 @@
+[
+  {
+    "source": "src/content/portfolio/cleveland-auto-show.en.mdx",
+    "sourceSHA256": "7e116df6447258071aee596743ccea2b8aa32d0d32427dd818b343a478193f69",
+    "migratedSHA256": "546ba43e310608b67b2a4859903716c3453ce795dbb46e2442eddbcc62fb43bf",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/cas-laptop.webp",
+      "public/portfolio/cas-mobile.webp"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/cleveland-auto-show.es.mdx",
+    "sourceSHA256": "f7d8a7466111a41f5b5793bc6628d4ff421f3a1195fc3cfbf98832bf181d97e1",
+    "migratedSHA256": "d5d2dacd07062bc4cbeda0c9490123dd031007ddb22d681bd980c37946116755",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/cas-laptop.webp",
+      "public/portfolio/cas-mobile.webp"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/cleveland-auto-show.it.mdx",
+    "sourceSHA256": "882fcdc9bef6b443051c75913b95137d749dcf2cf967611c37fd11d595101efb",
+    "migratedSHA256": "b2278266807d25c0f7454ec23bfd9eefcea92d758eaab6e3c6f237a3104aaf84",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/cas-laptop.webp",
+      "public/portfolio/cas-mobile.webp"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/costarica-adventurers.en.mdx",
+    "sourceSHA256": "bb51b85ee7a04d606bac219aae7d0992bec7f21db0a6f9fe9b6a0838baeb5ac6",
+    "migratedSHA256": "91f2d060900202f2cd2141b8659e1cc3ca1154fc6a06703a6c603b10e2e5bc77",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/cra-laptop.webp",
+      "public/portfolio/cr-adventurers-mobile.webm"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/costarica-adventurers.es.mdx",
+    "sourceSHA256": "117146e65b926aa94e863d02e8d31e52ae04e68ec0220781933fe92779fe82f3",
+    "migratedSHA256": "99e18e81285697a701043b02d525fbbe06cb3f834092a2ab349b73904bf856c3",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/cra-laptop.webp",
+      "public/portfolio/cr-adventurers-mobile.webm"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/costarica-adventurers.it.mdx",
+    "sourceSHA256": "b4bc534aa42da29268e0704c8eeaa9a34b832cab2e97e2e5bc4ad11d5e036a4e",
+    "migratedSHA256": "55ccf913454849379482b86afeb465a338f7e7039940a8dcaec7570c23f040f8",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/cra-laptop.webp",
+      "public/portfolio/cr-adventurers-mobile.webm"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/first-project.en.mdx",
+    "sourceSHA256": "bbf9e42e409bcf0ca1bb0666f3b2383034483f9fc15819b76efe5076c4031f4c",
+    "migratedSHA256": "72e533cc7ba395b15a35ab710491858d34a44dc8e09472c53ca8fc3af1c6a1c9",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/monkeyscrubs-featured.png",
+      "public/portfolio/monkeyscrubs-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/first-project.es.mdx",
+    "sourceSHA256": "0ca7c002b67f423e8228bfc48f62b0f8670224f9d64096ae3e05e2a5272d5164",
+    "migratedSHA256": "efba692039e2553c4514b89ec3ce36693af5b1a3ffd1834eaf5ad21c049c74ed",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/monkeyscrubs-featured.png",
+      "public/portfolio/monkeyscrubs-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/first-project.it.mdx",
+    "sourceSHA256": "459e375743fa3fa7d62d8b42efb49c179b4eabc384224714adfc0c1cad6790ab",
+    "migratedSHA256": "bd15e4c5d3be7273750df7c3e72e06a37b75affc37130754d9f6c19ae7bb3e0c",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/monkeyscrubs-featured.png",
+      "public/portfolio/monkeyscrubs-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/fisioadriancampos.en.mdx",
+    "sourceSHA256": "b5f4e54c5f0017498f860cf9822ca81cc98f095c8d1c2a7d0f31625e11cf2e64",
+    "migratedSHA256": "8f7075bea5bac718cc04f4a8f809099c9b1eba357197f38d614f1576eaa18017",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/fisio-adrian-laptop.png",
+      "public/portfolio/fisio-adrian-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/fisioadriancampos.es.mdx",
+    "sourceSHA256": "fa8d8400646f1572a970441a799607cee65045e40c2912b4148313d13cbf7944",
+    "migratedSHA256": "1c6c31a80eeab319435774e4f4b44a254b0c53116ec3fca3b7d79845f23923d1",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/fisio-adrian-laptop.png",
+      "public/portfolio/fisio-adrian-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/fisioadriancampos.it.mdx",
+    "sourceSHA256": "1928779b5977cd8459b014110570f82df25621a6b1073f95a4f203f913ebd43f",
+    "migratedSHA256": "c6983017784800746d19405c5656457df627d1565fed46f1ab7de55f5bb54488",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/fisio-adrian-laptop.png",
+      "public/portfolio/fisio-adrian-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/gbox-supplies.en.mdx",
+    "sourceSHA256": "52e233a3f38a6d0d1c7f12aa4a650985e46058e47a7549c04c4b14e2b6093da9",
+    "migratedSHA256": "5798fafe7084207edf0c7108f3ad1e13b6db7d53ee4a52ee6f0bcb716dbaf5a8",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/gbox-desktop.webp",
+      "public/portfolio/gbox-mobile.webm",
+      "public/portfolio/gbox-mobile.mp4"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/gbox-supplies.es.mdx",
+    "sourceSHA256": "12b92109f587131ebf43264c0b14aaad5e844d6323d7276e8805dd1787cdb8a0",
+    "migratedSHA256": "e3e8e648be96c8826bc7dc741156efa1e565f342bf226bf67c98bb30107f1063",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/gbox-desktop.webp",
+      "public/portfolio/gbox-mobile.webm",
+      "public/portfolio/gbox-mobile.mp4"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/gbox-supplies.it.mdx",
+    "sourceSHA256": "2511076f259032b892ed1e494e37d483709de0ea5716f2bb384825a968f6ce09",
+    "migratedSHA256": "f54eaee752c0ee49d7258f8bd8497cd228f5bf558fa1039c45d2bce1bdf14922",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/gbox-desktop.webp",
+      "public/portfolio/gbox-mobile.webm",
+      "public/portfolio/gbox-mobile.mp4"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/nuara-pelletterie-ecommerce.en.mdx",
+    "sourceSHA256": "585759ff1204b58195ecba0fc3f9aa0403a5abb0bf6f4d8b994b7c3ec7ab915d",
+    "migratedSHA256": "0480adddae1fcc6e5dfec5c3062f48ddd2f47cbf2d3b1a96e7b3d3bf20e077d6",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/hero-nuara.webp",
+      "public/portfolio/nuara-mobile.webm",
+      "public/portfolio/nuara-mobile.mp4"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/nuara-pelletterie-ecommerce.es.mdx",
+    "sourceSHA256": "6110eb4bd41ed45e576cdb30aaef540a0ccd1d326fb0ef2126d5465d26fcc0eb",
+    "migratedSHA256": "0d020d71402635d3e7656d87aa38d832d46a5a8f7f71e9ffa4d4aa54634be0e9",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/hero-nuara.webp",
+      "public/portfolio/nuara-mobile.webm",
+      "public/portfolio/nuara-mobile.mp4"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/nuara-pelletterie-ecommerce.it.mdx",
+    "sourceSHA256": "0032c220d59deaf7cd6101d9508f70319b145cc882c77a3e3354ff4c039875ea",
+    "migratedSHA256": "2aa4a50b7ef3fc7f6c0aaae4c135805122e72bd0d04a3987813ab827633bf568",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/hero-nuara.webp",
+      "public/portfolio/nuara-mobile.webm",
+      "public/portfolio/nuara-mobile.mp4"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/phonogram-single-management-system.en.mdx",
+    "sourceSHA256": "32b678efd80faf34f2a3cfae2269a1b9450c63b98214213890c9b865fba6e1c7",
+    "migratedSHA256": "51850efee29046340edbe03fe4d6da83353c2ffb6f888e601d18f3ccb1ac7c06",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/hero-aiecostarica.webp",
+      "public/portfolio/aiecostarica-mobile.webp"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/premium-brokers.en.mdx",
+    "sourceSHA256": "87995533307f33080c4586d54ff3ef7bfc2ad49ae5755a8a2f39eb543e41b457",
+    "migratedSHA256": "64c3ff6c3223b21205faa4c3fc415c7015221fbb68aa74703bb4da880de532c4",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/pb-laptop.png",
+      "public/portfolio/pb-cr-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/premium-brokers.es.mdx",
+    "sourceSHA256": "77fece21667904890275179d6cd38ccea85045493e1642455c6e965af34c237d",
+    "migratedSHA256": "6de6945da582cada32f0f27926addcf87faa202ef7a196764cbeb8d7f5e32a91",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/pb-laptop.png",
+      "public/portfolio/pb-cr-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/premium-brokers.it.mdx",
+    "sourceSHA256": "6dfbb9933a71eab540f4572373372222829ecf85cf417769c03390932fba6d83",
+    "migratedSHA256": "366a33c1fd1fb9aef5bf72ed63db4b3c30c57632f2a56cde6b7f3f40a2cd9f46",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/pb-laptop.png",
+      "public/portfolio/pb-cr-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/second-project.en.mdx",
+    "sourceSHA256": "03c077f8de28602e1cc36b8fdf1d5140cc3d790875674020e15f3096b0d0dd61",
+    "migratedSHA256": "8004cb60ff2d2917e94d09d7bb312e67630a1c216f03fe0c06093dc0360f0e40",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/fishcostarica-featured.png",
+      "public/portfolio/fishcostarica-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/second-project.es.mdx",
+    "sourceSHA256": "87abf2c3e0a518fc2609661d653a4c260ef651ffcd2f5583649f3f408ad22c31",
+    "migratedSHA256": "759ec3800b6a646ea4e4e867163b537eec45da46f99a14091ae413e7356ab907",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/fishcostarica-featured.png",
+      "public/portfolio/fishcostarica-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/second-project.it.mdx",
+    "sourceSHA256": "0f18e3645dd99b10ddedf14a75106340ba0ac9b7358d6f16de5b70d33ca4936a",
+    "migratedSHA256": "49fe16eba6225cf0a3df6876e3791993837eb3ebec1a22be6725966280fe0ec1",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/fishcostarica-featured.png",
+      "public/portfolio/fishcostarica-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/sistema-gestion-fonogramas-sencillos.es.mdx",
+    "sourceSHA256": "187710f1c2c225bc1de6bd318a7eda67480aa36e37274834be9008fcb2a7e63e",
+    "migratedSHA256": "a85766e34a3a5fdc8d45209f124c936ba65c87f19afb4f193a5b7261b8575180",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/hero-aiecostarica.webp",
+      "public/portfolio/aiecostarica-mobile.webp"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/sistema-gestione-fonogrammi-singoli.it.mdx",
+    "sourceSHA256": "68309e82424852c9506ab1608f2ff08f37ddd4a23f9d0a88b39289124dc89128",
+    "migratedSHA256": "a66aeec9267e9bf0e1a7fa9cc4290285f77263e8f8d997abd3adc16d7ec79157",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/hero-aiecostarica.webp",
+      "public/portfolio/aiecostarica-mobile.webp"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/sorrisodambrosio.en.mdx",
+    "sourceSHA256": "cbb8ff225adf941f991b4dfc024347a3ba19c52b8f2e1d21e01113ba98076364",
+    "migratedSHA256": "68be23f9eaf959c67e2e6854c423e2eb8a8f9c0d439a5ff362c64b3ba54673ee",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/d-ambrosio-laptop.png",
+      "public/portfolio/d-ambrosio-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/sorrisodambrosio.es.mdx",
+    "sourceSHA256": "d1bef66d6c6da5c80506ef43114168d0358d766ae3518452560722fc09aa14f5",
+    "migratedSHA256": "49514a85102df1c2a68206803e7fcc049b89c6d44b45019fdec2887b1d6d4c8b",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/d-ambrosio-laptop.png",
+      "public/portfolio/d-ambrosio-mobile.png"
+    ]
+  },
+  {
+    "source": "src/content/portfolio/sorrisodambrosio.it.mdx",
+    "sourceSHA256": "7f0f0d92623b36acb6b579d38963d7dda75ae4ac2acaa2701b6399ac35d5c1cb",
+    "migratedSHA256": "66ed9887c8be3a09c182b0800f1d1c276d67c0cf3c86a870d526ae527331bf34",
+    "bodyPreserved": true,
+    "assets": [
+      "public/portfolio/d-ambrosio-laptop.png",
+      "public/portfolio/d-ambrosio-mobile.png"
+    ]
+  }
+]

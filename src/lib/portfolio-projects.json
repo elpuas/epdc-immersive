@@ -1,0 +1,584 @@
+[
+  {
+    "title": "Custom Web Platform for Cleveland Auto Show",
+    "description": "WordPress redesign with a custom block theme and ACF, migrated from a proprietary CMS.",
+    "image": "/portfolio/cas-laptop.webp",
+    "date": "2025-02-01",
+    "tags": [
+      "WordPress",
+      "Block Theme",
+      "ACF",
+      "Custom Development"
+    ],
+    "lang": "en",
+    "slug": "cleveland-auto-show-wordpress-en",
+    "translationKey": "cleveland-auto-show",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "cleveland-auto-show.en.mdx",
+    "href": "/en/crafted-with-love/cleveland-auto-show-wordpress-en/"
+  },
+  {
+    "title": "Plataforma Web Personalizada para Cleveland Auto Show",
+    "description": "Rediseño en WordPress con block theme personalizado y ACF, migrado desde un CMS propietario.",
+    "image": "/portfolio/cas-laptop.webp",
+    "date": "2025-02-01",
+    "tags": [
+      "WordPress",
+      "Block Theme",
+      "ACF",
+      "Desarrollo Personalizado"
+    ],
+    "lang": "es",
+    "slug": "cleveland-auto-show-wordpress-es",
+    "translationKey": "cleveland-auto-show",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "cleveland-auto-show.es.mdx",
+    "href": "/es/crafted-with-love/cleveland-auto-show-wordpress-es/"
+  },
+  {
+    "title": "Piattaforma Web Personalizzata per Cleveland Auto Show",
+    "description": "Redesign in WordPress con block theme personalizzato e ACF, migrato da un CMS proprietario.",
+    "image": "/portfolio/cas-laptop.webp",
+    "date": "2025-02-01",
+    "tags": [
+      "WordPress",
+      "Block Theme",
+      "ACF",
+      "Sviluppo Personalizzato"
+    ],
+    "lang": "it",
+    "slug": "cleveland-auto-show-wordpress-it",
+    "translationKey": "cleveland-auto-show",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "cleveland-auto-show.it.mdx",
+    "href": "/it/crafted-with-love/cleveland-auto-show-wordpress-it/"
+  },
+  {
+    "title": "Multilingual Web Platform for Experiential Tourism",
+    "description": "First digital platform for a multilingual tourism venture.",
+    "image": "/portfolio/cra-laptop.webp",
+    "date": "2025-02-02",
+    "tags": [
+      "WordPress",
+      "Block Theme",
+      "Elementor",
+      "Custom Development"
+    ],
+    "lang": "en",
+    "slug": "plataforma-web-multilenguaje-turismo-experiencial-en",
+    "translationKey": "costarica-adventurers",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "costarica-adventurers.en.mdx",
+    "href": "/en/crafted-with-love/plataforma-web-multilenguaje-turismo-experiencial-en/"
+  },
+  {
+    "title": "Plataforma Web Multilenguaje para Turismo Experiencial",
+    "description": "Primera plataforma digital para un emprendimiento turístico multilenguaje.",
+    "image": "/portfolio/cra-laptop.webp",
+    "date": "2025-02-02",
+    "tags": [
+      "WordPress",
+      "Block Theme",
+      "Elementor",
+      "Custom Development"
+    ],
+    "lang": "es",
+    "slug": "plataforma-web-multilenguaje-turismo-experiencial-es",
+    "translationKey": "costarica-adventurers",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "costarica-adventurers.es.mdx",
+    "href": "/es/crafted-with-love/plataforma-web-multilenguaje-turismo-experiencial-es/"
+  },
+  {
+    "title": "Piattaforma Web Multilingue per il Turismo Esperienziale",
+    "description": "Prima piattaforma digitale per un'iniziativa turistica multilingue.",
+    "image": "/portfolio/cra-laptop.webp",
+    "date": "2025-02-02",
+    "tags": [
+      "WordPress",
+      "Block Theme",
+      "Elementor",
+      "Custom Development"
+    ],
+    "lang": "it",
+    "slug": "plataforma-web-multilenguaje-turismo-experiencial-it",
+    "translationKey": "costarica-adventurers",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "costarica-adventurers.it.mdx",
+    "href": "/it/crafted-with-love/plataforma-web-multilenguaje-turismo-experiencial-it/"
+  },
+  {
+    "title": "Custom E-Commerce Platform for Monkey Scrubs",
+    "description": "A high-conversion WooCommerce store with custom theme and backend integrations",
+    "image": "/portfolio/monkeyscrubs-featured.png",
+    "date": "2023-08-15",
+    "tags": [
+      "E-Commerce",
+      "WordPress",
+      "WooCommerce",
+      "Custom Development"
+    ],
+    "lang": "en",
+    "slug": "monkey-scrubs-ecommerce-en",
+    "translationKey": "first-project",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "first-project.en.mdx",
+    "href": "/en/crafted-with-love/monkey-scrubs-ecommerce-en/"
+  },
+  {
+    "title": "Plataforma de Comercio Electrónico Personalizada para Monkey Scrubs",
+    "description": "Una tienda WooCommerce de alta conversión con tema personalizado e integraciones backend",
+    "image": "/portfolio/monkeyscrubs-featured.png",
+    "date": "2023-08-15",
+    "tags": [
+      "E-Commerce",
+      "WordPress",
+      "WooCommerce",
+      "Desarrollo Personalizado"
+    ],
+    "lang": "es",
+    "slug": "monkey-scrubs-ecommerce-es",
+    "translationKey": "first-project",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "first-project.es.mdx",
+    "href": "/es/crafted-with-love/monkey-scrubs-ecommerce-es/"
+  },
+  {
+    "title": "Piattaforma E-Commerce Personalizzata per Monkey Scrubs",
+    "description": "Un negozio WooCommerce ad alta conversione con tema personalizzato e integrazioni backend",
+    "image": "/portfolio/monkeyscrubs-featured.png",
+    "date": "2023-08-15",
+    "tags": [
+      "E-Commerce",
+      "WordPress",
+      "WooCommerce",
+      "Sviluppo Personalizzato"
+    ],
+    "lang": "it",
+    "slug": "monkey-scrubs-ecommerce-it",
+    "translationKey": "first-project",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "first-project.it.mdx",
+    "href": "/it/crafted-with-love/monkey-scrubs-ecommerce-it/"
+  },
+  {
+    "title": "Physiotherapy Website with Blog for Dr. Adrián Campos",
+    "description": "A modern WordPress website for a physiotherapy expert, designed to highlight specialties and enable easy blog publishing.",
+    "image": "/portfolio/fisio-adrian-laptop.png",
+    "date": "2025-03-23",
+    "tags": [
+      "Healthcare",
+      "WordPress",
+      "Blog Integration",
+      "Maintenance Plan"
+    ],
+    "lang": "en",
+    "slug": "dr-adrian-campos-physiotherapy-blog-en",
+    "translationKey": "fisioadriancampos",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "fisioadriancampos.en.mdx",
+    "href": "/en/crafted-with-love/dr-adrian-campos-physiotherapy-blog-en/"
+  },
+  {
+    "title": "Sitio Web de Fisioterapia con Blog para Dr. Adrián Campos",
+    "description": "Sitio WordPress moderno para un fisioterapeuta, con especialidades destacadas y blog autogestionable.",
+    "image": "/portfolio/fisio-adrian-laptop.png",
+    "date": "2025-03-23",
+    "tags": [
+      "Salud",
+      "WordPress",
+      "Integración de Blog",
+      "Plan de Mantenimiento"
+    ],
+    "lang": "es",
+    "slug": "dr-adrian-campos-physiotherapy-blog-es",
+    "translationKey": "fisioadriancampos",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "fisioadriancampos.es.mdx",
+    "href": "/es/crafted-with-love/dr-adrian-campos-physiotherapy-blog-es/"
+  },
+  {
+    "title": "Sito Web di Fisioterapia con Blog per Dr. Adrián Campos",
+    "description": "Sito WordPress moderno per un fisioterapista, con specialità in evidenza e blog autogestibile.",
+    "image": "/portfolio/fisio-adrian-laptop.png",
+    "date": "2025-03-23",
+    "tags": [
+      "Sanità",
+      "WordPress",
+      "Integrazione Blog",
+      "Piano di Manutenzione"
+    ],
+    "lang": "it",
+    "slug": "dr-adrian-campos-physiotherapy-blog-it",
+    "translationKey": "fisioadriancampos",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "fisioadriancampos.it.mdx",
+    "href": "/it/crafted-with-love/dr-adrian-campos-physiotherapy-blog-it/"
+  },
+  {
+    "title": "GBOX Supplies - Catalog Platform and Custom Quotation System",
+    "description": "B2B commercial platform rebuilt in WordPress with a scalable catalog and a custom quotation system.",
+    "image": "/portfolio/gbox-desktop.webp",
+    "date": "2026-05-25",
+    "tags": [
+      "WordPress",
+      "Custom Development",
+      "Custom Plugin",
+      "UI/UX",
+      "Performance",
+      "B2B Platform"
+    ],
+    "lang": "en",
+    "slug": "gbox-supplies-plataforma-catalogo-cotizacion-personalizada-en",
+    "translationKey": "gbox-supplies",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 2,
+    "sourceFile": "gbox-supplies.en.mdx",
+    "href": "/en/crafted-with-love/gbox-supplies-plataforma-catalogo-cotizacion-personalizada-en/"
+  },
+  {
+    "title": "GBOX Supplies - Plataforma de Catálogo y Cotización Personalizada",
+    "description": "Plataforma comercial B2B reconstruida en WordPress con catálogo escalable y sistema custom de cotización.",
+    "image": "/portfolio/gbox-desktop.webp",
+    "date": "2026-05-25",
+    "tags": [
+      "WordPress",
+      "Custom Development",
+      "Custom Plugin",
+      "UI/UX",
+      "Performance",
+      "B2B Platform"
+    ],
+    "lang": "es",
+    "slug": "gbox-supplies-plataforma-catalogo-cotizacion-personalizada-es",
+    "translationKey": "gbox-supplies",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 2,
+    "sourceFile": "gbox-supplies.es.mdx",
+    "href": "/es/crafted-with-love/gbox-supplies-plataforma-catalogo-cotizacion-personalizada-es/"
+  },
+  {
+    "title": "GBOX Supplies - Piattaforma Catalogo e Sistema di Preventivo Personalizzato",
+    "description": "Piattaforma commerciale B2B ricostruita in WordPress con catalogo scalabile e sistema di preventivo personalizzato.",
+    "image": "/portfolio/gbox-desktop.webp",
+    "date": "2026-05-25",
+    "tags": [
+      "WordPress",
+      "Custom Development",
+      "Custom Plugin",
+      "UI/UX",
+      "Performance",
+      "B2B Platform"
+    ],
+    "lang": "it",
+    "slug": "gbox-supplies-plataforma-catalogo-cotizacion-personalizada-it",
+    "translationKey": "gbox-supplies",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 2,
+    "sourceFile": "gbox-supplies.it.mdx",
+    "href": "/it/crafted-with-love/gbox-supplies-plataforma-catalogo-cotizacion-personalizada-it/"
+  },
+  {
+    "title": "Nuara Pelletterie - WooCommerce Handbag Ecommerce",
+    "description": "Online store developed for an Italian brand with over 40 years of experience.",
+    "image": "/portfolio/hero-nuara.webp",
+    "date": "2026-04-15",
+    "tags": [
+      "WordPress",
+      "WooCommerce",
+      "Ecommerce",
+      "UI/UX",
+      "GDPR"
+    ],
+    "lang": "en",
+    "slug": "nuara-pelletterie-ecommerce-en",
+    "translationKey": "nuara-pelletterie-ecommerce",
+    "showcaseRole": "primary",
+    "showcaseOrder": 1,
+    "sourceFile": "nuara-pelletterie-ecommerce.en.mdx",
+    "href": "/en/crafted-with-love/nuara-pelletterie-ecommerce-en/"
+  },
+  {
+    "title": "Nuara Pelletterie — Ecommerce de Bolsos en WooCommerce",
+    "description": "Tienda online desarrollada para una marca italiana con más de 40 años de trayectoria.",
+    "image": "/portfolio/hero-nuara.webp",
+    "date": "2026-04-15",
+    "tags": [
+      "WordPress",
+      "WooCommerce",
+      "Ecommerce",
+      "UI/UX",
+      "GDPR"
+    ],
+    "lang": "es",
+    "slug": "nuara-pelletterie-ecommerce-es",
+    "translationKey": "nuara-pelletterie-ecommerce",
+    "showcaseRole": "primary",
+    "showcaseOrder": 1,
+    "sourceFile": "nuara-pelletterie-ecommerce.es.mdx",
+    "href": "/es/crafted-with-love/nuara-pelletterie-ecommerce-es/"
+  },
+  {
+    "title": "Nuara Pelletterie — Ecommerce di Borse in WooCommerce",
+    "description": "Negozio online sviluppato per un marchio italiano con oltre 40 anni di esperienza.",
+    "image": "/portfolio/hero-nuara.webp",
+    "date": "2026-04-15",
+    "tags": [
+      "WordPress",
+      "WooCommerce",
+      "Ecommerce",
+      "UI/UX",
+      "GDPR"
+    ],
+    "lang": "it",
+    "slug": "nuara-pelletterie-ecommerce-it",
+    "translationKey": "nuara-pelletterie-ecommerce",
+    "showcaseRole": "primary",
+    "showcaseOrder": 1,
+    "sourceFile": "nuara-pelletterie-ecommerce.it.mdx",
+    "href": "/it/crafted-with-love/nuara-pelletterie-ecommerce-it/"
+  },
+  {
+    "title": "Phonogram and Single Management System",
+    "description": "Custom WordPress application for structured music rights data, relationship automation, and administrative exports.",
+    "image": "/portfolio/hero-aiecostarica.webp",
+    "date": "2026-02-25",
+    "tags": [
+      "WordPress",
+      "Custom Post Types",
+      "ACF",
+      "Gravity Forms",
+      "Advanced Post Creation"
+    ],
+    "lang": "en",
+    "slug": "phonogram-single-management-system-en",
+    "translationKey": "phonogram-management",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "phonogram-single-management-system.en.mdx",
+    "href": "/en/crafted-with-love/phonogram-single-management-system-en/"
+  },
+  {
+    "title": "Real Estate Website for Premium Brokers",
+    "description": "We revamped Premium Brokers’ outdated site using a customized WordPress template.",
+    "image": "/portfolio/pb-laptop.png",
+    "date": "2024-06-01",
+    "tags": [
+      "Real Estate",
+      "WordPress",
+      "Template Customization",
+      "Maintenance Plan + Hosting"
+    ],
+    "lang": "en",
+    "slug": "premium-brokers-en",
+    "translationKey": "premium-brokers",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 3,
+    "sourceFile": "premium-brokers.en.mdx",
+    "href": "/en/crafted-with-love/premium-brokers-en/"
+  },
+  {
+    "title": "Sitio Web Inmobiliario para Premium Brokers",
+    "description": "Renovamos el sitio obsoleto de Premium Brokers usando una plantilla personalizada de WordPress.",
+    "image": "/portfolio/pb-laptop.png",
+    "date": "2024-06-01",
+    "tags": [
+      "Inmobiliaria",
+      "WordPress",
+      "Personalización de Plantilla",
+      "Plan de Mantenimiento + Hosting"
+    ],
+    "lang": "es",
+    "slug": "premium-brokers-es",
+    "translationKey": "premium-brokers",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 3,
+    "sourceFile": "premium-brokers.es.mdx",
+    "href": "/es/crafted-with-love/premium-brokers-es/"
+  },
+  {
+    "title": "Sito Web Immobiliare per Premium Brokers",
+    "description": "Abbiamo rinnovato il sito obsoleto di Premium Brokers utilizzando un template WordPress personalizzato.",
+    "image": "/portfolio/pb-laptop.png",
+    "date": "2024-06-01",
+    "tags": [
+      "Immobiliare",
+      "WordPress",
+      "Personalizzazione Template",
+      "Piano di Manutenzione + Hosting"
+    ],
+    "lang": "it",
+    "slug": "premium-brokers-it",
+    "translationKey": "premium-brokers",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 3,
+    "sourceFile": "premium-brokers.it.mdx",
+    "href": "/it/crafted-with-love/premium-brokers-it/"
+  },
+  {
+    "title": "FishCostaRica Sports Fishing Website",
+    "description": "A stunning, performance-optimized website showcasing Costa Rica's premier fishing experiences",
+    "image": "/portfolio/fishcostarica-featured.png",
+    "date": "2023-11-22",
+    "tags": [
+      "Tourism",
+      "WordPress",
+      "Custom Theme",
+      "Multilingual"
+    ],
+    "lang": "en",
+    "slug": "fishcostarica-tourism-en",
+    "translationKey": "second-project",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 4,
+    "sourceFile": "second-project.en.mdx",
+    "href": "/en/crafted-with-love/fishcostarica-tourism-en/"
+  },
+  {
+    "title": "Sitio Web Turístico FishCostaRica",
+    "description": "Un impresionante sitio web optimizado para rendimiento que muestra las mejores experiencias de pesca de Costa Rica",
+    "image": "/portfolio/fishcostarica-featured.png",
+    "date": "2023-11-22",
+    "tags": [
+      "Turismo",
+      "WordPress",
+      "Tema Personalizado",
+      "Multilingüe"
+    ],
+    "lang": "es",
+    "slug": "fishcostarica-tourism-es",
+    "translationKey": "second-project",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 4,
+    "sourceFile": "second-project.es.mdx",
+    "href": "/es/crafted-with-love/fishcostarica-tourism-es/"
+  },
+  {
+    "title": "Sito Web Turistico FishCostaRica",
+    "description": "Un impressionante sito web ottimizzato per le prestazioni che mette in mostra le migliori esperienze di pesca del Costa Rica",
+    "image": "/portfolio/fishcostarica-featured.png",
+    "date": "2023-11-22",
+    "tags": [
+      "Turismo",
+      "WordPress",
+      "Tema Personalizzato",
+      "Multilingue"
+    ],
+    "lang": "it",
+    "slug": "fishcostarica-tourism-it",
+    "translationKey": "second-project",
+    "showcaseRole": "secondary",
+    "showcaseOrder": 4,
+    "sourceFile": "second-project.it.mdx",
+    "href": "/it/crafted-with-love/fishcostarica-tourism-it/"
+  },
+  {
+    "title": "Sistema de Gestión de Fonogramas y Sencillos",
+    "description": "Aplicación personalizada sobre WordPress para gestión estructurada de obras musicales, automatización de relaciones y exportaciones.",
+    "image": "/portfolio/hero-aiecostarica.webp",
+    "date": "2026-02-25",
+    "tags": [
+      "WordPress",
+      "Custom Post Types",
+      "ACF",
+      "Gravity Forms",
+      "Advanced Post Creation"
+    ],
+    "lang": "es",
+    "slug": "sistema-gestion-fonogramas-sencillos-es",
+    "translationKey": "phonogram-management",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "sistema-gestion-fonogramas-sencillos.es.mdx",
+    "href": "/es/crafted-with-love/sistema-gestion-fonogramas-sencillos-es/"
+  },
+  {
+    "title": "Sistema di Gestione di Fonogrammi e Singoli",
+    "description": "Applicazione WordPress personalizzata per la gestione strutturata di opere musicali, automazione delle relazioni ed esportazioni amministrative.",
+    "image": "/portfolio/hero-aiecostarica.webp",
+    "date": "2026-02-25",
+    "tags": [
+      "WordPress",
+      "Custom Post Types",
+      "ACF",
+      "Gravity Forms",
+      "Advanced Post Creation"
+    ],
+    "lang": "it",
+    "slug": "sistema-gestione-fonogrammi-singoli-it",
+    "translationKey": "phonogram-management",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "sistema-gestione-fonogrammi-singoli.it.mdx",
+    "href": "/it/crafted-with-love/sistema-gestione-fonogrammi-singoli-it/"
+  },
+  {
+    "title": "Dental Clinic Website Redesign",
+    "description": "A modern, responsive website redesign for a dental clinic — built to inform, attract new patients, and reflect professionalism.",
+    "image": "/portfolio/d-ambrosio-laptop.png",
+    "date": "2024-08-01",
+    "tags": [
+      "Dental",
+      "WordPress",
+      "Template Customization",
+      "Maintenance Plan + Hosting"
+    ],
+    "lang": "en",
+    "slug": "sorriso-dambrosio-en",
+    "translationKey": "sorrisodambrosio",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "sorrisodambrosio.en.mdx",
+    "href": "/en/crafted-with-love/sorriso-dambrosio-en/"
+  },
+  {
+    "title": "Rediseño de Sitio Web para Clínica Dental",
+    "description": "Un rediseño moderno y responsivo de sitio web para una clínica dental — construido para informar, atraer nuevos pacientes y reflejar profesionalismo.",
+    "image": "/portfolio/d-ambrosio-laptop.png",
+    "date": "2024-08-01",
+    "tags": [
+      "Dental",
+      "WordPress",
+      "Personalización de Plantilla",
+      "Plan de Mantenimiento + Hosting"
+    ],
+    "lang": "es",
+    "slug": "sorriso-dambrosio-es",
+    "translationKey": "sorrisodambrosio",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "sorrisodambrosio.es.mdx",
+    "href": "/es/crafted-with-love/sorriso-dambrosio-es/"
+  },
+  {
+    "title": "Redesign del Sito Web per Clinica Dentale",
+    "description": "Un redesign moderno e responsivo del sito web per una clinica dentale — costruito per informare, attrarre nuovi pazienti e riflettere professionalità.",
+    "image": "/portfolio/d-ambrosio-laptop.png",
+    "date": "2024-08-01",
+    "tags": [
+      "Dentale",
+      "WordPress",
+      "Personalizzazione Template",
+      "Piano di Manutenzione + Hosting"
+    ],
+    "lang": "it",
+    "slug": "sorriso-dambrosio-it",
+    "translationKey": "sorrisodambrosio",
+    "showcaseRole": "none",
+    "showcaseOrder": 0,
+    "sourceFile": "sorrisodambrosio.it.mdx",
+    "href": "/it/crafted-with-love/sorriso-dambrosio-it/"
+  }
+]

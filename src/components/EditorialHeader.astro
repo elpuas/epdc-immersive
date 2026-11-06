@@ -1,0 +1,7 @@
+---
+import {locales,translator,type Locale} from '../lib/i18n';
+import {blogPath} from '../lib/blog';
+const {locale,languagePaths={},currentPage='blog'}=Astro.props as {locale:Locale;languagePaths?:Partial<Record<Locale,string>>;currentPage?:'blog'|'project'};
+const t=translator(locale);
+---
+<header class="site-header"><a class="brand-mark" href={`/${locale}/`} aria-label="ElPuas Digital Crafts"><img src="/brand/logo.webp" alt="ElPuas Digital Crafts" width="64" height="64"/></a><div class="header-extras"><a class="header-blog" href={blogPath(locale)} aria-current={currentPage==='blog'?'page':undefined}>{t('Blog')}</a><nav class="language-links" aria-label={t('Idioma')}>{locales.map(lang=><a href={languagePaths[lang]??(currentPage==='project'?`/${lang}/#trabajo`:blogPath(lang))} hrefLang={lang} lang={lang} aria-current={lang===locale?'page':undefined}>{lang.toUpperCase()}</a>)}</nav></div></header>

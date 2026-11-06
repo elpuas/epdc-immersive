@@ -1,0 +1,37 @@
+---
+import {getCollection,render} from 'astro:content';
+import posts from '../../../lib/blog-posts.json';
+import {postTranslations,blogPosts,blogPath} from '../../../lib/blog';
+import {translator,type Locale} from '../../../lib/i18n';
+import {pageSEO,siteURL} from '../../../lib/seo';
+import SEO from '../../../components/SEO.astro';
+import EditorialHeader from '../../../components/EditorialHeader.astro';
+import EditorialFooter from '../../../components/EditorialFooter.astro';
+import EditorialTerrain from '../../../components/EditorialTerrain.astro';
+import EditorialLink from '../../../components/EditorialLink.astro';
+import '../../../styles/global.css';
+import '../../../styles/blog.css';
+import '../../../styles/post.css';
+export async function getStaticPaths(){
+ const entries=await getCollection('blog');
+ return posts.map(post=>{const entry=entries.find(entry=>entry.id===post.sourceFile.replace(/\.mdx$/,''));if(!entry)throw new Error('Missing migrated entry '+post.sourceFile);return {params:{lang:post.lang,slug:post.slug},props:{post,entry}};});
+}
+const {post,entry}=Astro.props,locale=post.lang as Locale,t=translator(locale);
+const {Content}=await render(entry);
+const translated=postTranslations(post),languagePaths=Object.fromEntries(translated.map(other=>[other.lang,other.href]));
+const url=new URL(post.href,siteURL).href,base=pageSEO(locale),description=post.description;
+const title=post.title+' | ElPuas Digital Crafts';
+const alternates=translated.map(other=>({lang:other.lang,url:new URL(other.href,siteURL).href}));
+const seo={...base,title,description,url,alternates,schema:{'@context':'https://schema.org','@graph':[
+ ...base.schema['@graph'].filter(item=>['Organization','WebSite'].includes(item['@type'])),
+ {'@type':'BlogPosting','@id':url+'#article',url,headline:post.title,description,inLanguage:locale,mainEntityOfPage:{'@id':url+'#webpage'},publisher:{'@id':siteURL.href+'#organization'},...(post.author?{author:{'@type':'Person',name:post.author}}:{}),...(post.date?{datePublished:post.date}:{}),...(post.image?{image:new URL(post.image,siteURL).href}:{})},
+ {'@type':'WebPage','@id':url+'#webpage',url,name:title,inLanguage:locale,isPartOf:{'@id':siteURL.href+'#website'},mainEntity:{'@id':url+'#article'}}
+]}};
+const related=blogPosts(locale).filter(other=>other.slug!==post.slug).slice(0,2);
+---
+<!doctype html><html lang={locale}><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><SEO {locale} {seo} ogType="article"/>{post.image&&<meta property="og:image" content={new URL(post.image,siteURL).href}/>}</head><body class="blog-shell post-shell">
+<a class="skip-content" href="#post-content">{t('Ir al contenido')}</a><EditorialHeader {locale} {languagePaths}/>
+<main class="post-main" id="post-content" tabindex="-1"><article><header class="post-heading"><a class="post-back" href={blogPath(locale)}>← {t('Volver al blog')}</a><h1>{post.title}</h1><div class="post-meta">{post.author&&<span>{post.author}</span>}{post.date&&<time datetime={post.date}>{new Intl.DateTimeFormat(locale,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(new Date(post.date))}</time>}</div></header><div class="post-body"><Content components={{a:EditorialLink}}/></div></article>
+<section class="post-related" aria-labelledby="related-title"><h2 id="related-title">{t('Seguí leyendo')}</h2><div class="blog-grid">{related.map(other=><article class="blog-entry"><a class="blog-entry-image" href={other.href} tabindex="-1" aria-hidden="true">{other.image&&<img src={other.image} alt="" width="640" height="360" loading="lazy"/>}</a><h2><a href={other.href}>{other.title}</a></h2><p>{other.description}</p></article>)}</div></section>
+</main><section class="blog-return"><a href={blogPath(locale)}>{t('Volver al blog')} <span aria-hidden="true">→</span></a><EditorialTerrain/></section><EditorialFooter {locale}/>
+</body></html>

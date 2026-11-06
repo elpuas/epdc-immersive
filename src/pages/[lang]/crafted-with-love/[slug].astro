@@ -1,0 +1,36 @@
+---
+import {getCollection,render} from 'astro:content';
+import projects from '../../../lib/portfolio-projects.json';
+import {nextProject,projectDisplayName,projectTranslations} from '../../../lib/portfolio';
+import {translator,type Locale} from '../../../lib/i18n';
+import {pageSEO,siteURL} from '../../../lib/seo';
+import SEO from '../../../components/SEO.astro';
+import EditorialHeader from '../../../components/EditorialHeader.astro';
+import EditorialFooter from '../../../components/EditorialFooter.astro';
+import EditorialTerrain from '../../../components/EditorialTerrain.astro';
+import EditorialLink from '../../../components/EditorialLink.astro';
+import '../../../styles/global.css';
+import '../../../styles/blog.css';
+import '../../../styles/post.css';
+import '../../../styles/portfolio.css';
+export async function getStaticPaths(){const entries=await getCollection('portfolio');return projects.map(project=>{const entry=entries.find(entry=>entry.id===project.sourceFile.replace(/\.mdx$/,''));if(!entry)throw new Error('Missing portfolio entry '+project.sourceFile);return {params:{lang:project.lang,slug:project.slug},props:{project,entry}};});}
+const {project,entry}=Astro.props,locale=project.lang as Locale,t=translator(locale),name=projectDisplayName(project);
+const {Content}=await render(entry);
+const translated=projectTranslations(project),languagePaths=Object.fromEntries(translated.map(other=>[other.lang,other.href]));
+const url=new URL(project.href,siteURL).href,title=`${project.title} | ElPuas Digital Crafts`,base=pageSEO(locale);
+const seo={...base,title,description:project.description,url,alternates:translated.map(other=>({lang:other.lang,url:new URL(other.href,siteURL).href})),schema:{'@context':'https://schema.org','@graph':[
+ ...base.schema['@graph'].filter(item=>['Organization','WebSite'].includes(item['@type'])),
+ {'@type':'CreativeWork','@id':url+'#project',url,name:project.title,description:project.description,inLanguage:locale,image:new URL(project.image,siteURL).href,creator:{'@id':siteURL.href+'#organization'}},
+ {'@type':'WebPage','@id':url+'#webpage',url,name:title,description:project.description,inLanguage:locale,isPartOf:{'@id':siteURL.href+'#website'},mainEntity:{'@id':url+'#project'}}
+]}};
+const next=nextProject(project);
+---
+<!doctype html><html lang={locale}><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><SEO {locale} {seo} ogType="article"/><meta property="og:image" content={new URL(project.image,siteURL).href}/></head><body class="blog-shell post-shell portfolio-shell">
+<a class="skip-content" href="#project-content">{t('Ir al contenido')}</a><EditorialHeader {locale} {languagePaths} currentPage="project"/>
+<main class="case-main" id="project-content" tabindex="-1"><article>
+ <header class="case-hero"><img src={project.image} alt={name} width="1440" height="900" fetchpriority="high"/><div class="case-hero-copy"><span class="case-eyebrow">{t('PROYECTO DESTACADO')}</span><h1>{name}</h1><p>{project.description}</p></div></header>
+ <div class="case-content"><div class="case-tags" aria-label={t('Capacidades')}>{project.tags.map(tag=><span>{tag}</span>)}</div><div class="case-body post-body"><Content components={{a:EditorialLink}}/></div></div>
+ </article>
+ <nav class="case-next" aria-label={t('Siguiente proyecto')}><span>{t('Siguiente proyecto')}</span><a href={next.href}>{projectDisplayName(next)} <span aria-hidden="true">→</span></a></nav>
+</main><section class="blog-return case-return"><a href={`/${locale}/#trabajo`}>{t('Volver a los proyectos')} <span aria-hidden="true">→</span></a><EditorialTerrain/></section><EditorialFooter {locale}/>
+</body></html>
