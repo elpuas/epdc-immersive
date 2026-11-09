@@ -26,7 +26,7 @@ for(const lang of langs){
  console.log(`${lang}: metadata, hreflang, JSON-LD and HTML content OK`);
 }
 const sitemap=readFileSync('dist/sitemap.xml','utf8');
-const routeCount=3+langs.reduce((sum,lang)=>sum+pageCount(lang),0);
+const routeCount=9+langs.reduce((sum,lang)=>sum+pageCount(lang),0);
 assert.equal((sitemap.match(/<loc>/g)||[]).length,routeCount+posts.length+projects.length);
 const groups=JSON.parse(readFileSync('src/lib/blog-translations.json','utf8'));
 const alternateCount=posts.reduce((sum,post)=>sum+1+(groups.find(group=>group.includes(post.href))?.length??1),0);
@@ -38,6 +38,16 @@ for(const lang of langs){for(let page=1;page<=pageCount(lang);page++){
  assert(html.includes('CollectionPage'));assert(html.includes('aria-current="page"'));
  assert(html.includes(`/${lang}/blog/${page===1?'':page+'/'}`));
  }}
+for(const lang of langs){
+ const prices=lang==='it'?['€135','€162','€225']:['$150','$180','$250'];
+ const services=readFileSync(`dist/${lang}/services/index.html`,'utf8');
+ const terms=readFileSync(`dist/${lang}/terms-and-conditions/index.html`,'utf8');
+ for(const price of prices){assert(services.includes(price),`${lang} plan price in HTML`);assert(terms.includes(price),`${lang} plan price in terms`);}
+ assert(services.includes(`/${lang}/terms-and-conditions/`),`${lang} terms link`);
+ assert(services.includes(`hreflang="${lang}"`));
+ assert(terms.includes(`/${lang}/services/#pricing-title`),`${lang} return to plans`);
+ assert.equal((terms.match(/<h2>/g)||[]).length,16,`${lang} complete legal terms`);
+}
 assert(existsSync('dist/robots.txt'));assert(existsSync('dist/llms.txt'));
 console.log('Sitemap, robots and optional LLM link index OK');
 

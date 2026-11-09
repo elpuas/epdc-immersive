@@ -1,0 +1,42 @@
+---
+import {locales, type Locale} from '../../../lib/i18n';
+import {supportContent} from '../../../lib/support';
+import {pageSEO, siteURL} from '../../../lib/seo';
+import SEO from '../../../components/SEO.astro';
+import EditorialHeader from '../../../components/EditorialHeader.astro';
+import EditorialFooter from '../../../components/EditorialFooter.astro';
+import EditorialTerrain from '../../../components/EditorialTerrain.astro';
+import '../../../styles/global.css';
+import '../../../styles/blog.css';
+import '../../../styles/support.css';
+
+export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
+const locale=Astro.params.lang as Locale;
+const copy=supportContent[locale];
+const url=new URL(`/${locale}/services/`,siteURL).href;
+const base=pageSEO(locale);
+const title=`${copy.title} | ElPuas Digital Crafts`;
+const seo={...base,title,description:copy.description,url,alternates:locales.map(lang=>({lang,url:new URL(`/${lang}/services/`,siteURL).href})),schema:{'@context':'https://schema.org','@graph':[
+  ...base.schema['@graph'].filter(item=>['Organization','WebSite'].includes(item['@type'])),
+  {'@type':'WebPage','@id':url+'#webpage',url,name:title,description:copy.description,inLanguage:locale,isPartOf:{'@id':siteURL.href+'#website'}},
+]}};
+const languagePaths=Object.fromEntries(locales.map(lang=>[lang,`/${lang}/services/`]));
+---
+<!doctype html><html lang={locale}><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><SEO {locale} {seo}/></head><body class="blog-shell support-shell">
+<a class="skip-content" href="#support-content">{locale==='es'?'Ir al contenido':locale==='en'?'Skip to content':'Vai al contenuto'}</a>
+<EditorialHeader {locale} {languagePaths} currentPage="service"/>
+<main class="support-main" id="support-content" tabindex="-1">
+  <header class="support-intro"><p class="support-eyebrow">{copy.eyebrow}</p><h1>{copy.title}</h1><p>{copy.intro}</p></header>
+  <section class="support-pricing" aria-labelledby="pricing-title">
+    <h2 id="pricing-title">{copy.pricingTitle}</h2>
+    <div class="support-plans">{copy.plans.map((plan,index)=><article class="support-plan" id={plan.name.toLowerCase().replaceAll(' ','-')}>
+      <div class="support-plan-top"><span class="support-plan-number">0{index+1}</span><h3>{plan.name}</h3><p>{plan.description}</p></div>
+      <p class="support-price"><strong>{plan.price}</strong><span>{copy.monthly}</span></p>
+      <ul>{plan.features.map(feature=><li>{feature}</li>)}</ul>
+      <a class="support-plan-link" href={`mailto:management@elpuasdev.com?subject=${encodeURIComponent(`${plan.name} — ElPuas Digital Crafts`)}`}>{copy.planCta}</a>
+    </article>)}</div>
+    <div class="support-fineprint"><p>{copy.included}</p><a href={`/${locale}/terms-and-conditions/`}>{copy.terms}</a></div>
+  </section>
+</main>
+<section class="blog-return support-return"><a href={`/${locale}/`}>{copy.returnLabel}</a><EditorialTerrain/></section><EditorialFooter {locale}/>
+</body></html>

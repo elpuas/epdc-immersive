@@ -1,0 +1,35 @@
+---
+import esTerms from '../../lib/legal/terms.es.html?raw';
+import enTerms from '../../lib/legal/terms.en.html?raw';
+import itTerms from '../../lib/legal/terms.it.html?raw';
+import {locales, type Locale} from '../../lib/i18n';
+import {pageSEO, siteURL} from '../../lib/seo';
+import SEO from '../../components/SEO.astro';
+import EditorialHeader from '../../components/EditorialHeader.astro';
+import EditorialFooter from '../../components/EditorialFooter.astro';
+import EditorialTerrain from '../../components/EditorialTerrain.astro';
+import '../../styles/global.css';
+import '../../styles/blog.css';
+import '../../styles/support.css';
+
+export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
+const locale=Astro.params.lang as Locale;
+const texts={es:esTerms,en:enTerms,it:itTerms};
+const titles={es:'Términos y condiciones',en:'Terms and conditions',it:'Termini e condizioni'};
+const descriptions={es:'Términos y condiciones de los planes de soporte y mantenimiento y los servicios de desarrollo de ElPuas Digital Crafts.',en:'Terms and conditions for support and maintenance plans and development services from ElPuas Digital Crafts.',it:'Termini e condizioni dei piani di supporto e manutenzione e dei servizi di sviluppo di ElPuas Digital Crafts.'};
+const backLabels={es:'Volver a los planes →',en:'Back to the plans →',it:'Torna ai piani →'};
+const url=new URL(`/${locale}/terms-and-conditions/`,siteURL).href;
+const base=pageSEO(locale);
+const title=`${titles[locale]} | ElPuas Digital Crafts`;
+const seo={...base,title,description:descriptions[locale],url,alternates:locales.map(lang=>({lang,url:new URL(`/${lang}/terms-and-conditions/`,siteURL).href})),schema:{'@context':'https://schema.org','@graph':[
+  ...base.schema['@graph'].filter(item=>['Organization','WebSite'].includes(item['@type'])),
+  {'@type':'WebPage','@id':url+'#webpage',url,name:title,description:descriptions[locale],inLanguage:locale,isPartOf:{'@id':siteURL.href+'#website'}},
+]}};
+const languagePaths=Object.fromEntries(locales.map(lang=>[lang,`/${lang}/terms-and-conditions/`]));
+---
+<!doctype html><html lang={locale}><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><SEO {locale} {seo}/></head><body class="blog-shell support-shell terms-shell">
+<a class="skip-content" href="#terms-content">{locale==='es'?'Ir al contenido':locale==='en'?'Skip to content':'Vai al contenuto'}</a>
+<EditorialHeader {locale} {languagePaths} currentPage="terms"/>
+<main class="terms-main" id="terms-content" tabindex="-1"><article class="terms-body" set:html={texts[locale]}/></main>
+<section class="blog-return support-return"><a href={`/${locale}/services/#pricing-title`}>{backLabels[locale]}</a><EditorialTerrain/></section><EditorialFooter {locale}/>
+</body></html>
