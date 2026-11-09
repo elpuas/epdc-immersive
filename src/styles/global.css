@@ -380,3 +380,37 @@ html[data-entry-failed=true] .entry-loading .site-header .brand-mark,html[data-e
  .mobile-portfolio-overlay .portfolio-clients{margin-top:28px}
  .mobile-portfolio-overlay .service-actions{margin:24px 0 0;padding:16px 0 0}
 }
+
+/* Keep the other stations readable without scaling their desktop surfaces in 3D. */
+@media(max-width:600px){
+ .mobile-station-overlay{position:absolute;z-index:60;inset:100px 0 58px;overflow-y:auto;overscroll-behavior:contain;padding:16px 6vw 34px;background:linear-gradient(#02090aec,#02090af0);scrollbar-width:thin;scrollbar-color:#849b22 #0a1518}
+ .mobile-station-back{display:inline-flex;align-items:center;gap:9px;min-height:44px;margin:0 0 22px;padding:0;border:0;background:none;color:#d8ff00;font-size:14px;text-align:left}
+ .mobile-station-back span{font-size:22px;line-height:1}
+ .mobile-station-overlay .services-explorer,.mobile-station-overlay .content-scene{width:100%;max-width:none;height:auto;min-height:0;margin:0;padding:0;text-align:left}
+ .mobile-station-overlay .services-heading{text-align:left;margin:0 0 22px}
+ .mobile-station-overlay .services-heading h1{font-size:clamp(31px,8.5vw,39px);line-height:1.07;margin:8px 0 0}
+ .mobile-station-overlay .services-kicker{font-size:12px;line-height:1.4;margin:0}
+ .mobile-station-overlay .services-layout,.mobile-station-overlay .studio-layout,.mobile-station-overlay .contact-composition{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-height:0;overflow:visible}
+ .mobile-station-overlay .service-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .mobile-station-overlay .service-options button{min-width:0;min-height:64px;padding:10px 2px;gap:8px;font-size:14px;line-height:1.3}
+ .mobile-station-overlay .service-options button svg{width:22px;height:22px}
+ .mobile-station-overlay .service-option-arrow{display:none}
+ .mobile-station-overlay .service-description,.mobile-station-overlay .studio-detail,.mobile-station-overlay .contact-fields{height:auto;min-height:0;max-height:none;overflow:visible;padding:0;scrollbar-gutter:auto}
+ .mobile-station-overlay .service-copy h2,.mobile-station-overlay .studio-copy h2,.mobile-station-overlay .contact-introduction h2{font-size:clamp(24px,6.5vw,29px);line-height:1.18}
+ .mobile-station-overlay .service-copy p,.mobile-station-overlay .studio-copy p,.mobile-station-overlay .contact-introduction>p{font-size:16px;line-height:1.65}
+ .mobile-station-overlay .service-actions{justify-content:flex-start;gap:10px;margin:24px 0 0;padding:18px 0 0}
+ .mobile-station-overlay .service-actions button{font-size:13px;padding:11px 15px}
+ .mobile-station-overlay .studio-explorer{display:block;height:auto}
+ .mobile-station-overlay .studio-people,.mobile-station-overlay .studio-portraits{min-height:0}
+ .mobile-station-overlay .studio-portraits{height:150px;flex:none;gap:10px}
+ .mobile-station-overlay .studio-person,.mobile-station-overlay .studio-photo{height:150px}
+ .mobile-station-overlay .studio-story-choice{margin-bottom:10px}
+ .mobile-station-overlay .studio-profile-photo{margin:0 0 18px}
+ .mobile-station-overlay .contacto-scene{display:block;height:auto;padding:0}
+ .mobile-station-overlay .contact-identity{grid-template-columns:minmax(0,1fr);gap:18px}
+ .mobile-station-overlay .contact-fields{gap:18px}
+ .mobile-station-overlay .contact-submit{margin-top:10px;padding-top:0}
+ .mobile-station-overlay .article-panels{grid-template-columns:minmax(0,1fr)}
+ .mobile-station-overlay .article-panel h2{min-height:0}
+}
+@media(max-width:350px){.mobile-station-overlay .service-options button{font-size:13px}.mobile-station-overlay .service-options button svg{width:19px;height:19px}}

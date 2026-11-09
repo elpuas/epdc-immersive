@@ -87,7 +87,7 @@ function CameraRig({ destination, reduced, onArrive }: { destination: Destinatio
 function World({ destination, reduced, navigate, locale, shellOnly, onReady, onArrive, portal, settledDestination, compactPortfolio }: { destination: Destination; reduced: boolean; navigate:(d:Destination)=>void;locale:Locale;shellOnly:boolean;onReady:()=>void;onArrive:(destination:Destination)=>void;portal:{current:HTMLElement};settledDestination:Destination|null;compactPortfolio:boolean }) {
   const t=translator(locale);
   return <><color attach="background" args={['#000000']} /><fog attach="fog" args={['#000000', 35, 150]} /><Terrain reduced={reduced} />
-    {!shellOnly&&stationIds.filter(id=>!(id==='trabajo'&&compactPortfolio)).map(id=><group key={id} position={stations[id].position} rotation={[0,stations[id].angle,0]}>
+    {!shellOnly&&!compactPortfolio&&stationIds.map(id=><group key={id} position={stations[id].position} rotation={[0,stations[id].angle,0]}>
       <Html portal={portal} transform distanceFactor={4} zIndexRange={[50,0]} style={{overflow:"clip"}}>
         <div className={`spatial-section station-section${destination===id?' is-current':''}${destination===id&&(id==='estudio'||id==='contacto')&&settledDestination!==id?' is-arriving':''}${id==='servicios'?' station-services-container':id==='trabajo'?' station-portfolio-container':id==='estudio'?' station-studio-container':id==='contacto'?' station-contact-container':''}`} style={{opacity:destination===id?1:destination==='inicio'?(id==='servicios'?.42:.1):.17,filter:destination===id?'blur(0px)':destination==='inicio'?(id==='servicios'?'blur(2.5px)':'blur(4px)'):'blur(3px)'}} inert={destination!==id} aria-hidden={destination!==id}>
           {id==='servicios'?<ServicesScene locale={locale} navigate={navigate} active={destination==='servicios'}/ >:<ContentScenes destination={id} navigate={navigate} locale={locale} active={destination===id&&((id!=='estudio'&&id!=='contacto')||settledDestination===id)}/>}
@@ -205,6 +205,10 @@ export default function Experience({locale="es",shellOnly=false}:{locale?:Locale
   <div className="choices" inert={!introComplete}><button onClick={()=>navigate('servicios')}>{t('Quiero construir algo')}</button><button onClick={()=>navigate('estudio')}>{t('Quiero conocerlos')}</button></div>
  </main>}
  {webgl&&compactPortfolio&&destination==='trabajo'&&<div className="mobile-portfolio-overlay"><ContentScenes destination="trabajo" navigate={navigate} locale={locale}/></div>}
+ {webgl&&compactPortfolio&&destination!=='inicio'&&destination!=='trabajo'&&<div className="mobile-station-overlay" key={destination}>
+  <button className="mobile-station-back" onClick={()=>navigate('inicio')} aria-label={t('Volver al inicio ↩')}><span aria-hidden="true">←</span> {t('Volver al inicio ↩')}</button>
+  {destination==='servicios'?<ServicesScene locale={locale} navigate={navigate}/>:<ContentScenes destination={destination} navigate={navigate} locale={locale}/>}
+ </div>}
  {!webgl&&destination!=='inicio'&&<div className="static-scenes">{destination==='servicios'?<ServicesScene locale={locale} navigate={navigate}/>:<ContentScenes destination={destination} navigate={navigate} locale={locale}/>}</div>}
 
 
