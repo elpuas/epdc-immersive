@@ -33,7 +33,7 @@ const languagePaths=Object.fromEntries(locales.map(lang=>[lang,`/${lang}/service
       <div class="support-plan-top"><span class="support-plan-number">0{index+1}</span><h3>{plan.name}</h3><p>{plan.description}</p></div>
       <p class="support-price"><strong>{plan.price}</strong><span>{copy.monthly}</span></p>
       <ul>{plan.features.map(feature=><li>{feature}</li>)}</ul>
-      <a class="support-plan-link" href={`mailto:management@elpuasdev.com?subject=${encodeURIComponent(`${plan.name} — ElPuas Digital Crafts`)}`}>{copy.planCta}</a>
+      <a class="support-plan-link" href={`/${locale}/contact/`}>{copy.planCta}</a>
     </article>)}</div>
     <div class="support-fineprint"><p>{copy.included}</p><a href={`/${locale}/terms-and-conditions/`}>{copy.terms}</a></div>
   </section>
